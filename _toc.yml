@@ -33,5 +33,6 @@
   - file: content/module_01/intro   
     title: Motivation and Getting Started 
     sections:
-    - file: content/module_01/motivation
-    - file: content/module_01/setup
+    - file: content/01/motivation
+    - file: content/01/setup
+    - file: content/01/03a_practice.ipynb
