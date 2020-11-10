@@ -13,5 +13,7 @@
   - file: content/assignments/newchap   
     title: A special title  
   - file: content/assignments/new_chapter_norun
+  - file: content/assignments/markdown3
     sections:
     - file: content/assignments/content
+    - file: content/assignments/markdown2
