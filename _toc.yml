@@ -12,15 +12,27 @@
 
 - part: About the class
   chapters:
-  - file: content/about/syllabus
-  - file: content/about/schedule
+  - file: content/about/about_us
+    title: "About us + office hours" 
+  - file: content/about/objectives
+  - file: content/about/tips_and_expectations
+  - file: content/about/gradeoverview
   - file: content/about/keylinks
   - file: content/about/resources
   
-- part: Assignments  
+- part: Checklist, Schedule, Forms
+  chapters:
+  - file: content/about/schedule
+
+- part: Assignments and participation  
   chapters:
   - file: content/assignments/howto_do
   - file: content/assignments/howto_review
+  
+  - file: content/assignments/particip_header
+    sections:
+    - file: content/assignments/particip_part1
+    
   - file: content/assignments/asgn01_header
     sections:
     - file: content/assignments/asgn01_part1
@@ -31,8 +43,9 @@
   numbered: true # will number the chapters and sections INSIDE the part(s) below
   chapters:  
   - file: content/01/intro   
-    title: Motivation and Getting Started 
+    title: "Motivation and Getting Started"
     sections:
     - file: content/01/motivation
     - file: content/01/setup
-    - file: content/01/03a_practice.ipynb
+  - file: content/01/03a_practice.ipynb
+    title: "Just a file to see what happens"
