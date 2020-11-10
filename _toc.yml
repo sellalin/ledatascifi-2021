@@ -1,6 +1,4 @@
-file: CONDUCT
 sections:
-- file: CONTRIBUTING
 - file: README
 - file: ledatascifi_2021/content
   sections:
