@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Graphing exercises &#8212; LeDataSciFi-2021</title>
+    <title>3. Graphing exercises &#8212; LeDataSciFi-2021</title>
     
   <link rel="stylesheet" href="../../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
 
@@ -56,6 +56,7 @@
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
+    <link rel="prev" title="2. Set up" href="setup.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -151,6 +152,28 @@
   </ul>
   <i class="fas fa-chevron-down">
   </i>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Textbook
+ </span>
+</p>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="motivation.html">
+   1. Motivation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="setup.html">
+   2. Set up
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   3. Graphing exercises
+  </a>
  </li>
 </ul>
 
@@ -260,34 +283,34 @@
             <ul class="nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#let-s-revisit-the-simple-program">
-   Let’s revisit the “Simple Program”
+   3.1. Let’s revisit the “Simple Program”
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#questions">
-     Questions:
+     3.1.1. Questions:
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#pushing-asgn-02-further">
-   Pushing ASGN-02 further
+   3.2. Pushing ASGN-02 further
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#exercise-plot-returns-by-industry">
-     Exercise: Plot returns by industry
+     3.2.1. Exercise: Plot returns by industry
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#exercise-plot-returns-vs-risk">
-     Exercise: Plot returns vs. risk
+     3.2.2. Exercise: Plot returns vs. risk
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#exercise-plot-average-returns-in-the-industry">
-     Exercise: Plot average returns in the industry
+     3.2.3. Exercise: Plot average returns in the industry
     </a>
    </li>
   </ul>
@@ -304,9 +327,9 @@
               <div>
                 
   <div class="section" id="graphing-exercises">
-<h1>Graphing exercises<a class="headerlink" href="#graphing-exercises" title="Permalink to this headline">¶</a></h1>
+<h1><span class="section-number">3. </span>Graphing exercises<a class="headerlink" href="#graphing-exercises" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="let-s-revisit-the-simple-program">
-<h2>Let’s revisit the “Simple Program”<a class="headerlink" href="#let-s-revisit-the-simple-program" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">3.1. </span>Let’s revisit the “Simple Program”<a class="headerlink" href="#let-s-revisit-the-simple-program" title="Permalink to this headline">¶</a></h2>
 <p>First, there are several elements of my code that we can improve, so this will let me reiterate some of the golden rules.</p>
 <p>Second, below I’ll <strong>create variables based only on group data</strong>. Here, it’s computing returns for a firm (i.e. the “group” is all observations for a single firm), but this is broadly applicable (you can change the group to “firm-year” or “industry” or “industry-year” or “industry-year-state” or…</p>
 <p>Third, we get to practice plotting, and then improving bad plots.</p>
@@ -361,7 +384,7 @@
 </div>
 </div>
 <div class="section" id="questions">
-<h3>Questions:<a class="headerlink" href="#questions" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">3.1.1. </span>Questions:<a class="headerlink" href="#questions" title="Permalink to this headline">¶</a></h3>
 <ol class="simple">
 <li><p>Check that there are 3 missing observations of <code class="docutils literal notranslate"><span class="pre">ret</span></code>: the first return for each shouldn’t exist.</p></li>
 <li><p>Describe returns for each firm separately (i.e. make one table), and your answers should match mine below.</p></li>
@@ -403,7 +426,7 @@ To register the converters:
 </div>
 </div>
 <div class="section" id="pushing-asgn-02-further">
-<h2>Pushing ASGN-02 further<a class="headerlink" href="#pushing-asgn-02-further" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">3.2. </span>Pushing ASGN-02 further<a class="headerlink" href="#pushing-asgn-02-further" title="Permalink to this headline">¶</a></h2>
 <p>Let’s make a new figure and explore some new variables, which are described at https://github.com/LeDataSciFi/lectures-spr2020/tree/master/assignment_data</p>
 <p>Copy this cell into your live coding notebook and run it to get a firm-year (1 obs per firm per year) dataset:</p>
 <div class="cell docutils container">
@@ -440,18 +463,18 @@ To register the converters:
 </div>
 </div>
 <div class="section" id="exercise-plot-returns-by-industry">
-<h3>Exercise: Plot returns by industry<a class="headerlink" href="#exercise-plot-returns-by-industry" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">3.2.1. </span>Exercise: Plot returns by industry<a class="headerlink" href="#exercise-plot-returns-by-industry" title="Permalink to this headline">¶</a></h3>
 <p>Scatterplot GSector and Returns, and use the full sample (<code class="docutils literal notranslate"><span class="pre">firms</span></code>).</p>
 <p>Question 1: What is your reaction to this?</p>
 <p>Question 2: Choose a different graph type to improve it <strong>visually</strong>.</p>
 </div>
 <div class="section" id="exercise-plot-returns-vs-risk">
-<h3>Exercise: Plot returns vs. risk<a class="headerlink" href="#exercise-plot-returns-vs-risk" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">3.2.2. </span>Exercise: Plot returns vs. risk<a class="headerlink" href="#exercise-plot-returns-vs-risk" title="Permalink to this headline">¶</a></h3>
 <p>Scatterplot Std and Returns, and use the subsample sample (<code class="docutils literal notranslate"><span class="pre">subsample</span></code>).</p>
 <p>Question: How can this be improved?</p>
 </div>
 <div class="section" id="exercise-plot-average-returns-in-the-industry">
-<h3>Exercise: Plot average returns in the industry<a class="headerlink" href="#exercise-plot-average-returns-in-the-industry" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">3.2.3. </span>Exercise: Plot average returns in the industry<a class="headerlink" href="#exercise-plot-average-returns-in-the-industry" title="Permalink to this headline">¶</a></h3>
 <p>Use the full sample and plot the means as a bar chart.</p>
 <p>Question: How can this be improved?</p>
 </div>
@@ -486,6 +509,7 @@ To register the converters:
     
     <div class='prev-next-bottom'>
         
+    <a class='left-prev' id="prev-link" href="setup.html" title="previous page"><span class="section-number">2. </span>Set up</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
