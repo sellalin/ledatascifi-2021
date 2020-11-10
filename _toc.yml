@@ -1,9 +1,17 @@
 # Table of contents
 # Learn more at https://jupyterbook.org/customize/toc.html
-- file: intro
-- file: content
-  sections:
-    - file: markdown
-    - file: notebooks
-    - file: newchap    
-    - file: new_chapter_norun
+- file: content/about/intro
+
+- part: About the class
+  chapters:
+  - file: content/about/markdown
+  - file: content/about/notebooks
+  
+- part: Textbook 
+  numbered: true # will number the chapters and sections INSIDE the part(s) below
+  chapters:  
+  - file: content/assignments/newchap   
+    title: A special title  
+  - file: content/assignments/new_chapter_norun
+    sections:
+    - file: content/assignments/content

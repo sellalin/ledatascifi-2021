@@ -9,3 +9,6 @@ title                       : LeDataSciFi-2021  # The title of the book. Will be
 author                      : Prof. Donald Bowen  # The author of the book
 copyright                   : "2020"  # Copyright year to be placed in the footer
 logo                        : logo.png  # A path to the book logo
+
+execute:
+  execute_notebooks: 'off'
