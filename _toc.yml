@@ -1,7 +1,8 @@
-sections:
-- file: README
-- file: ledatascifi_2021/content
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+- file: intro
+- file: content
   sections:
-  - file: ledatascifi_2021/intro
-  - file: ledatascifi_2021/markdown
-  - file: ledatascifi_2021/notebooks
+    - file: markdown
+    - file: notebooks
+    - file: newchap    
