@@ -1,0 +1,9 @@
+file: CONDUCT
+sections:
+- file: CONTRIBUTING
+- file: README
+- file: ledatascifi_2021/content
+  sections:
+  - file: ledatascifi_2021/intro
+  - file: ledatascifi_2021/markdown
+  - file: ledatascifi_2021/notebooks
