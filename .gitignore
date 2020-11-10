@@ -1,6 +1,7 @@
 # Not ready for prime time / keeping stuff secret
 /content/under construction/*
 /assignment_data/creating/inputs/*
+_build/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
