@@ -6,3 +6,4 @@
     - file: markdown
     - file: notebooks
     - file: newchap    
+    - file: new_chapter_norun
