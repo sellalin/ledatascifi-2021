@@ -25,7 +25,7 @@
 ```
 
 ```{dropdown} 3. **OFTEN** (say every 60-90 minutes or so, but depends on the team/task): 
-You should push your changes to the cloud right? (Both as a backup and also so teammates can see the changes and work with the latest files.)
+Push your changes to the cloud by clicking the blue "push" button. (Both as a backup and also so teammates can see the changes and work with the latest files.)
 
 
 ```
