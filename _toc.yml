@@ -13,43 +13,47 @@
 
 - part: About the class
   chapters:
+  - file: content/about/objectives
+    title: "Objectives + outcomes"
   - file: content/about/about_us
     title: "About us + office hours" 
-  - file: content/about/objectives
-  - file: content/about/tips_and_expectations
+  - file: content/about/structure_and_policies
   - file: content/about/gradeoverview
-  - file: content/about/keylinks
-  - file: content/about/resources
+  - file: content/about/acknowledgments
   
-  
-- part: Checklist, Schedule, Forms
+- part: Schedule, tips, resources
   chapters:
   - file: content/about/schedule
+    title: "Dashboard, key links, schedule"
+  - file: content/about/resources
+    title: "Help + resources"
+  - file: content/about/tips
 
 
 - part: Assignments and participation  
   chapters:
   - file: content/assignments/howto_do
-  - file: content/assignments/howto_review
-  
-  - file: content/assignments/particip_header
-    sections:
-    - file: content/assignments/particip_part1
+    title: "How to start and turn in assignments"
+  - file: content/assignments/howto_review 
+
+#  - file: content/assignments/particip_header
+#    sections:
+#    - file: content/assignments/particip_part1
     
-  - file: content/assignments/asgn01_header
-    sections:
-    - file: content/assignments/asgn01_part1
-    - file: content/assignments/asgn01_part2
-    - file: content/assignments/asgn01_part3
+#  - file: content/assignments/asgn01_header
+#    sections:
+#    - file: content/assignments/asgn01_part1
+#    - file: content/assignments/asgn01_part2
+#    - file: content/assignments/asgn01_part3
   
   
-- part: Textbook 
-  numbered: true # will number the chapters and sections INSIDE the part(s) below
-  chapters:  
-  - file: content/01/intro   
-    title: "Motivation and Getting Started"
-    sections:
-    - file: content/01/motivation
-    - file: content/01/setup
-  - file: content/01/03a_practice.ipynb
-    title: "Just a file to see what happens"
+# - part: Textbook 
+#  numbered: true # will number the chapters and sections INSIDE the part(s) below
+#  chapters:  
+#  - file: content/01/intro   
+#    title: "Motivation and Getting Started"
+#    sections:
+#    - file: content/01/motivation
+#    - file: content/01/setup
+#  - file: content/01/03a_practice.ipynb
+#    title: "Just a file to see what happens"
