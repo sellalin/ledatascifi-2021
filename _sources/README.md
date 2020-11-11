@@ -1,34 +1,19 @@
 # LeDataSciFi-2021
 
-The 2021 edition of LeDataSciFi
+The 2021 edition of LeDataSciFi. It will eventually be hosted at [ledatascifi.github.io](https://ledatascifi.github.io).
 
-## Usage
-
-### Building the book
-
-If you'd like to develop on and build the LeDataSciFi-2021 book, you should:
-
-- Clone this repository and run
-- Run `pip install -r requirements.txt` (it is recommended you do this within a virtual environment)
-- (Recommended) Remove the existing `LeDataSciFi-2021/_build/` directory
-- Run `jupyter-book build LeDataSciFi-2021/`
-
-A fully-rendered HTML version of the book will be built in `LeDataSciFi-2021/_build/html/`.
-
-### Hosting the book
-
-The html version of the book is hosted on the `gh-pages` branch of this repo. A GitHub actions workflow has been created that automatically builds and pushes the book to this branch on a push or pull request to main.
-
-If you wish to disable this automation, you may remove the GitHub actions workflow and build the book manually by:
-
-- Navigating to your local build; and running,
-- `ghp-import -n -p -f LeDataSciFi-2021/_build/html`
-
-This will automatically push your build to the `gh-pages` branch. More information on this hosting process can be found [here](https://jupyterbook.org/publish/gh-pages.html#manually-host-your-book-with-github-pages).
-
-## Contributors
-
-We welcome and recognize all contributions. You can see a list of current contributors in the [contributors tab](https://github.com/donbowen/ledatascifi_2021/graphs/contributors).
+- Greatly simplified prior website structure - now everything is in one book, and can be ported from year to year.
+- Now using `jupyter-book` 0.8.3 instead of 0.6.4, which are in compatible.
+- To build the book for local viewing:
+    - `cd <>/ledatascifi-2021` (this will move once this repo goes live and replaces the main ledatascifi.github.io repo)
+    - (Recommended) Remove the existing `LeDataSciFi-2021/_build/` directory
+    - `jupyter-book build ./`
+    - A fully-rendered HTML version of the book will be built in the `_build/html/` folder.
+- To update website: Simply push or pull the main branch of the repo. A GitHub actions workflow (`.github/workflows/deploy.yml`) automatically builds and pushes the book in the `gh-pages` branch, and GitHub pages will update the website in <5 minutes. 
+- Book formatting is controlled by
+    - `_config.yml` for most settings
+    - `_toc.yml` lays out the book table of contents, ie the left nav bar
+    - `_static/*` - any css or js I want to add to modify the base styling goes here
 
 ## Credits
 

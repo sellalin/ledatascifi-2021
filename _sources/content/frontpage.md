@@ -1,17 +1,11 @@
-# Lehigh's Data Science for Finance
 
-_**TODO: Insert cover photo here (lehigh campus + some data-y collage)**_
+![](coverphoto/my_cover_skinny.png)
 
-<p style="font-size:24px; line-height:24px; margin:0 0 10px;">  <!-- makes it like H3 -->
-  <b>Spring 2021 Edition</b>
-</p>    
+## Welcome to the Spring 2021 Edition of Data Science for Finance!
 
-Listed as FIN377 within the College of Business at Lehigh University.
+- If it's your first time here, start by reading [about the class](about/objectives). 
+- Otherwise, go [here](about/schedule) to see the upcoming schedule and current tasks.
 
+Just a heads up: This website is under construction. 
 
-
-
-
-<!-- -->
-
-
+LaDataSciFi is listed as FIN377 within the College of Business at Lehigh University.

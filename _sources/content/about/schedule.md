@@ -1,11 +1,35 @@
-# Schedule
+# Your course dashboard
 
-TODO
+```{tip}
+I recommend bookmarking this page as your go-to when you visit the site!
+```
 
-- (maybe a link to coursesite for priv to) form to submit pre class questions
-- a link to coursesite for links to join assignment repos
-- todo: put these links in coursesite, but also make VERY clear that only things students should expect here are these links; if they want to hear announcements, they must get on the org's classmates team
+````{panels}
 
+Key Links
+^^^
 
-- dashboard/agenda
-- high level weekly view
+- [Main discussion board for classmates team](https://github.com/orgs/LeDataSciFi/teams/classmates)
+- [Submitting questions, answers, and misc before class so we can discuss it in class](https://forms.gle/jB6ok11k5Ehid7ap6)
+- Starting your assignments (TODO - link)
+- Recent class recordings (if available) (TODO - link)
+    
+Do you have other essential links that you think should be here? Submit a request by clicking the Github icon above, and then "Suggest Edit"!
+    
+```{warning}    
+Remember, that only things you should expect to find on Coursesite are assignment links and (possibly) records. To get class announcements, you must get on the Github org's "classmates" team!
+```
+
+---
+
+Upcoming tasks
+^^^
+
+TODO  - dashboard/agenda
+
+````
+
+## Schedule
+
+TODO - high level weekly view
+

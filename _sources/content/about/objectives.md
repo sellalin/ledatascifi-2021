@@ -1,4 +1,4 @@
-## Objectives
+## Objectives 
 
 ### Briefly 
 1.    _Use python to obtain, explore, groom, visualize, and analyze data_ &rightarrow;  **the puts the world of big data at your fingertips**
