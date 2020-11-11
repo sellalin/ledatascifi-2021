@@ -18,3 +18,5 @@ The 2021 edition of LeDataSciFi. It will eventually be hosted at [ledatascifi.gi
 ## Credits
 
 This project is created using the excellent open source [Jupyter Book project](https://jupyterbook.org/) and the [executablebooks/cookiecutter-jupyter-book template](https://github.com/executablebooks/cookiecutter-jupyter-book).
+
+
