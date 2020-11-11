@@ -10,6 +10,7 @@
 
 - file: content/frontpage # the index must be a single file, no way around it!
 
+
 - part: About the class
   chapters:
   - file: content/about/about_us
@@ -20,9 +21,11 @@
   - file: content/about/keylinks
   - file: content/about/resources
   
+  
 - part: Checklist, Schedule, Forms
   chapters:
   - file: content/about/schedule
+
 
 - part: Assignments and participation  
   chapters:
@@ -38,6 +41,7 @@
     - file: content/assignments/asgn01_part1
     - file: content/assignments/asgn01_part2
     - file: content/assignments/asgn01_part3
+  
   
 - part: Textbook 
   numbered: true # will number the chapters and sections INSIDE the part(s) below
