@@ -14,7 +14,8 @@
 - part: About the class
   chapters:
   - file: content/about/objectives
-    title: "Objectives + outcomes"
+  - file: content/about/outcomes
+    title: "Outcomes"
   - file: content/about/about_us
     title: "About us + office hours" 
   - file: content/about/structure_and_policies
