@@ -55,10 +55,3 @@
     - bad algos abound
 - &#rightarrow; applying our new skills in our expertise area (finance, duh!)
 
-### Tangible output/value you'll get from this course
-
-1. Use all methods above in one project that can be on your resume +  teaches peers/myself + demonstrates accumulated finance knowledge + (BONUS) shows off ability to deliver reports/work product that bosses 
-2. Your resume can now list several new skills employers pay $$$ for
-3. Your resume can now list a completed project showing off those skills (which employers pay $$$ for)
-4. Experience you can take to interviews
-

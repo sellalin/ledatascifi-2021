@@ -4,6 +4,10 @@
 This page is important - please read it all!
 ```
 
+```{note}
+Structure and policies aren't fixed. This is only the second year of the class, so my approach to the class can change and shift as I learn what works and doesn't. And also... it's a pandemic. So we might need to adapt for reasons outside our control. 
+```
+
 ### Github, or: How I learned to ignore Coursesite (for FIN377)
 
 The whole class is run off this website and GitHub. GitHub is how we'll submit assignments, provide feedback, receive grades, etc.  You'll learn how this works as the semester proceeds. Coursesite will _**only**_ be used to post links I don't want public. Announcements will be made verbally in class and/or on Github. 
