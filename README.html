@@ -261,11 +261,17 @@
                 
   <div class="section" id="ledatascifi-2021">
 <h1>LeDataSciFi-2021<a class="headerlink" href="#ledatascifi-2021" title="Permalink to this headline">¶</a></h1>
-<p>The 2021 edition of LeDataSciFi. It will eventually be hosted at <a class="reference external" href="https://ledatascifi.github.io">ledatascifi.github.io</a>.</p>
+<p>This repo is the 2021 edition of LeDataSciFi. The <a class="reference external" href="https://ledatascifi.github.io">ledatascifi.github.io</a> repo hosts the website, but simply redirects to the cover page for <em><strong>this</strong></em> repo. In future years, make a new years’ website as a new repo by cloning this one (don’t forget the GH action that deploys it!), and alter the redirect from the ledatascifi.github.io to the new website.</p>
 <ul class="simple">
-<li><p>Greatly simplified prior website structure - now everything is in one book, and can be ported from year to year.</p></li>
-<li><p>Now using <code class="docutils literal notranslate"><span class="pre">jupyter-book</span></code> 0.8.3 instead of 0.6.4, which are in compatible.</p></li>
-<li><p>To build the book for local viewing:</p>
+<li><p>Greatly simplified prior website structure - now everything is in one book, which can be ported from year to year with simpler updates. The only portion of class <em><strong>outside</strong></em> this repo is</p>
+<ul>
+<li><p>the org’s has teams for discussion and many repos for assignments, etc</p></li>
+<li><p>coursesite to send out assignment links, Zoom links, and schedule office hours appointments from within the Lehigh “gates”</p></li>
+<li><p>the schedule and weekly tasks that are embedded in the dashboard page are an excel file on my computer</p></li>
+</ul>
+</li>
+<li><p>Now using <code class="docutils literal notranslate"><span class="pre">jupyter-book</span></code> 0.8.3 instead of 0.6.4, which are incompatible.</p></li>
+<li><p>To build the book for <em><strong>local</strong></em> viewing (quicker dev cycles than waiting for website to refresh):</p>
 <ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">&lt;&gt;/ledatascifi-2021</span></code> (this will move once this repo goes live and replaces the main ledatascifi.github.io repo)</p></li>
 <li><p>(Recommended) Remove the existing <code class="docutils literal notranslate"><span class="pre">LeDataSciFi-2021/_build/</span></code> directory</p></li>
