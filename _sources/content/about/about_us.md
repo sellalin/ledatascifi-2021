@@ -5,8 +5,8 @@
     <b>Professor Donald Bowen  </b>
 </p>   
 ^^^
-```{image} img/don.jpg
-:alt: don
+```{image} img/don2.jpg
+:alt: me
 ```
 My research: [https://bowen.finance](https://bowen.finance) <br>
 Email: deb219 <br>
