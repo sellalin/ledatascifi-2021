@@ -6,7 +6,7 @@
 :class: tip
 1. Help functions and documentation.
 1. Search Google/Stack Overflow. Stack Overflow in particular is where the programming community asks and answers questions. 
-1. **Ask your peers by posting an issue in the [classmates team](https://github.com/orgs/LeDataSciFi/teams/classmates) 
+1. **Ask your peers by posting an issue in the [classmates team](https://github.com/orgs/LeDataSciFi/teams/classmates)** 
 1. Post your problem as a question on Stack Overflow. 
 1. The TA's email and/or office hours.
 1. My office hours or email. I've listed myself last because, although I'm happy to help (I am!), I can't actually debug for 60+ students.

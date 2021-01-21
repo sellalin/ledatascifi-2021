@@ -44,13 +44,11 @@ I'm not sure if I will record any sessions, but if I do, they will be available 
 
 #### Attendance
 
-```{admonition} TODO - update for covid remote era
-- **I expect students to attend all classes.** It is crucial to learning the content in this class, but also for hearing announcements and course changes. _Remember: This class is brand new, so things are liable to change. If you don't attend class, you will be off guard or unaware of developments I announce verbally._ 
-- **Please bring your laptops to class.**[^outdated] This will be a very hands-on course, with relatively little in the way of formal theory. Instead, we’ll be working through lecture notes together in class and you’ll be running code on your own machines. 
-- **Participation is essential for understanding and integrating the material.** All students should be willing to volunteer answers, speculation, and argue for different approaches. Students should engage with hypotheticals in discussions, and be working on the code of the moment when called. Participation grade is based on: (1) submitted codes developed during class, (2) preparation when cold-called, and (3) volunteering answers. Please don't over-volunteer: I will cap credit at some point. 
-```
+Seeing students in class is fun for me, and your attendance will help you learn the content in this course. Plus, I sometimes make live-only announcements during class. _Remember: This class is still quite new, so things are liable to change._
 
-[^outdated]: Well... I guess this policy is redundant this year. 
+With that in mind, **a [large part of the grade](gradeoverview) depends on attendance, directly or indirectly.** 
+
+I will take snapshots of the zoom gallery intermittantly throughout the semester without notice, and will award points to those with their cameras on. 
 
 ### Grading policies and academic integrity
 
