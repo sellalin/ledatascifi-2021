@@ -26,7 +26,7 @@ Somehow, I am still a Lions fan, even though stints in AZ, CA, PA, NY, TX, and F
 Email: jtd221  <br>
 GitHub: tdinhjason  <br> 
 <br>
-TODO - add a fun fact (took it last semester) or excitement for the semester
+I took this class last semester and highly recommend. It's helped me tons with finding a job. Outside of school I like to do yoga, hike, and generally just be outside!
 ````
 
 ### Drop-in Hours are on [coursesite](https://coursesite.lehigh.edu/course/view.php?id=193947)
