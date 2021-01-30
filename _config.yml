@@ -68,5 +68,3 @@ sphinx:
   extra_extensions          :   # A list of extra extensions to load by Sphinx (added to those already used by JB).
   config                    :   # key-value pairs to directly over-ride the Sphinx configuration    
 
-parse:
-  myst_extended_syntax: true
