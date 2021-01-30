@@ -30,7 +30,7 @@ From most important to slightly less important:
 - Discussion board posts: asking questions-but don't spam the board with low effort posts, sharing fun and related articles or code snippets ("Look what I found! Maybe this is useful")[^sharecode]
 - Presenting pre-class exercise attempts (good faith attempts)
 - In-class coding (mostly effort based)
-- Contributions to discussions
+- Contributions to discussions and poll/quiz answers
 - Is your camera on when I randomly take snapshots of the gallery? 
 ```
 

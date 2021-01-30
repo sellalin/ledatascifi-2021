@@ -48,13 +48,16 @@
 #    - file: content/assignments/asgn01_part3
   
   
-# - part: Textbook 
-#  numbered: true # will number the chapters and sections INSIDE the part(s) below
-#  chapters:  
-#  - file: content/01/intro   
-#    title: "Motivation and Getting Started"
-#    sections:
-#    - file: content/01/motivation
+- part: Textbook 
+  numbered: true # will number the chapters and sections INSIDE the part(s) below
+  chapters:  
+  - file: "content/01/00_Getting_Started"
+    title: "Motivation and Getting Started"
+    sections:
+    - file: "content/01/01_Motivation"
+      title: "Motivation"
+    - file: "content/01/02_Setup"
+    
 #    - file: content/01/setup
 #  - file: content/01/03a_practice.ipynb
 #    title: "Just a file to see what happens"
