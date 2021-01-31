@@ -25,9 +25,9 @@ I'm collecting some tips from around the site here. This is not comprehensive. I
 
 ## Any work you do
 
-Fetch early, commit frequently, push often! 
+Fetch early, commit frequently, push often! :star: :star: :star: 
 
-For more on this process, see [the github workflow](../assignments/howto_do.html#working-on-assignments-projects-taking-notes).
+For more on this process, see [the github workflow](../assignments/howto_do.html#working-on-assignments-projects-taking-notes). :star: :star: :star:
 
 <!-- This follows the spirit of the [workflow recipe from lecture 1](https://ledatascifi.github.io/lectures-spr2020/01/01_Motivation_and_Getting_Started.html#***-THE-WORKFLOW-RECIPE--***):
 -->

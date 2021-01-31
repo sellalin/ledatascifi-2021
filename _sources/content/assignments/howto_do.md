@@ -51,6 +51,10 @@ If you don't "fetch" before you start, it's becomes easier to change a file some
 
 ```
 
+```{tip} 
+**I call these three steps our "GitHub workflow".**
+```
+
 ## Submitting assignments 
 
 Submission is easy: Whatever is in your assignment repo (the online version, not your computer!!!) at the deadline is what will be graded. 

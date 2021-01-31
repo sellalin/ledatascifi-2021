@@ -74,12 +74,18 @@ Once you have solved the problem (either by yourself or with the help of an inst
 
 ###  <u><b> THE MOST ESSENTIAL RESOURCES </b></u>  
 - Help: Google, [Stack Overflow](https://stackoverflow.com), [Github help](https://help.github.com), [Jupyter documentation](https://jupyter.readthedocs.io/en/latest/running.html), [Python help](https://www.python.org/doc/)
-- Cheat sheets to bookmark/print! [python basics](img/pythonbasics.pdf), [jupyter notebook](/img/jupyternotebook.pdf), [importing data](/img/importingdata.pdf), [numpy](/img/numpy.pdf), [pandas basics](/img/pandasbasics.pdf) and [more on pandas](/img/pandas.pdf), [matplotlib](/img/matplotlib.pdf), [scitkit-learn](/img/scitkit-learn.pdf), [seaborn](/img/seaborn.pdf)
-    - _Note: The website won't display the links to these cheatsheets. Download from the website repo on github, in the cheatsheets folder._[^badlinks] 
+- Cheat sheets to bookmark/print! **Better yet, download these to your Notes repo, and put them in the "Codebook" folder therein!**
+    - <a href="../../../../content/about/img/pythonbasics.jpg">python basics</a> 
+    - <a href="../../../../content/about/img/jupyternotebook.jpg">jupyter notebook</a> 
+    - <a href="../../../../content/about/img/importingdata.jpg">importing data</a> 
+    - <a href="../../../../content/about/img/numpy.jpg">numpy</a> 
+    - <a href="../../../../content/about/img/pandasbasics.jpg">pandas basics</a> 
+    - <a href="../../../../content/about/img/pandas.jpg">more on pandas</a> 
+    - <a href="../../../../content/about/img/matplotlib.jpg">matplotlib</a> 
+    - <a href="../../../../content/about/img/scitkit-learn.jpg">scitkit-learn</a> 
+    - <a href="../../../../content/about/img/seaborn.jpg">seaborn</a> 
 - [Coding best practices, and project management](https://web.stanford.edu/~gentzkow/research/CodeAndData.xhtml)
 - <b><u> Anything that is bolded/underlined below is also considered essential.</u></b>
-
-[^badlinks]: TODO [low priority] Jupyterbook isn't copying the PDF files into the build folder, nor is it attempting to even create relative links to the files. I've tried alternate path specifications to the files, no go. 
 
 ### Python
 - <b><u>Essential:</u></b> [A whirlwind tour of python](https://github.com/jakevdp/WhirlwindTourOfPython)
