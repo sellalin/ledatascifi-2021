@@ -73,7 +73,7 @@ Once you have solved the problem (either by yourself or with the help of an inst
 ## Resources - tutorials and data 
 
 ###  <u><b> THE MOST ESSENTIAL RESOURCES </b></u>  
-- Help: Google, [Stack Overflow](https://stackoverflow.com), [Github help](https://help.github.com), [Jupyter documentation](https://jupyter.readthedocs.io/en/latest/running.html), [Python help](https://www.python.org/doc/)
+- Help: Google, [Stack Overflow](https://stackoverflow.com), [Github help](https://help.github.com), [JupyterLab documentation](https://jupyterlab.readthedocs.io/en/stable/index.html), [Python help](https://www.python.org/doc/)
 - [Cheat sheets to bookmark/print!](https://github.com/LeDataSciFi/ledatascifi-2021/tree/main/cheatsheets) **Better yet, download these to your Notes repo, and put them in the "Codebook" folder therein!**
     - Included in this folder: python basics, jupyter notebook, importing data, numpy, pandas, seaborn, and scikit-learn
 - [Coding best practices, and project management](https://web.stanford.edu/~gentzkow/research/CodeAndData.xhtml)
