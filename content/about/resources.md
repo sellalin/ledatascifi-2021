@@ -74,16 +74,8 @@ Once you have solved the problem (either by yourself or with the help of an inst
 
 ###  <u><b> THE MOST ESSENTIAL RESOURCES </b></u>  
 - Help: Google, [Stack Overflow](https://stackoverflow.com), [Github help](https://help.github.com), [Jupyter documentation](https://jupyter.readthedocs.io/en/latest/running.html), [Python help](https://www.python.org/doc/)
-- Cheat sheets to bookmark/print! **Better yet, download these to your Notes repo, and put them in the "Codebook" folder therein!**
-    - <a href="../../../../content/about/img/pythonbasics.jpg">python basics</a> 
-    - <a href="../../../../content/about/img/jupyternotebook.jpg">jupyter notebook</a> 
-    - <a href="../../../../content/about/img/importingdata.jpg">importing data</a> 
-    - <a href="../../../../content/about/img/numpy.jpg">numpy</a> 
-    - <a href="../../../../content/about/img/pandasbasics.jpg">pandas basics</a> 
-    - <a href="../../../../content/about/img/pandas.jpg">more on pandas</a> 
-    - <a href="../../../../content/about/img/matplotlib.jpg">matplotlib</a> 
-    - <a href="../../../../content/about/img/scitkit-learn.jpg">scitkit-learn</a> 
-    - <a href="../../../../content/about/img/seaborn.jpg">seaborn</a> 
+- [Cheat sheets to bookmark/print!](https://github.com/LeDataSciFi/ledatascifi-2021/tree/main/cheatsheets) **Better yet, download these to your Notes repo, and put them in the "Codebook" folder therein!**
+    - Included in this folder: python basics, jupyter notebook, importing data, numpy, pandas, seaborn, and scikit-learn
 - [Coding best practices, and project management](https://web.stanford.edu/~gentzkow/research/CodeAndData.xhtml)
 - <b><u> Anything that is bolded/underlined below is also considered essential.</u></b>
 
