@@ -64,6 +64,6 @@
     - file: "content/01/06_python"
       title: "Python Basics"    
     - file: "content/01/07_debugging"
-      title: "Python Basics"    
+      title: "Debugging"    
     - file: "content/01/08_libraries"
 
