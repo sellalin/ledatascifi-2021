@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>This is a header, which I got by putting # This... at the beginning &#8212; LeDataSciFi-2021</title>
+    <title>A “Simple Program” &#8212; LeDataSciFi-2021</title>
     
   <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
@@ -208,6 +208,11 @@
      1.7. Python Basics
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../content/01/08_libraries.html">
+     1.8. Installing libraries
+    </a>
+   </li>
   </ul>
   <i class="fas fa-chevron-down">
   </i>
@@ -248,7 +253,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/lectures/Screenshot of first notebook.ipynb"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/lectures/stock_prices.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
@@ -268,10 +273,10 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/LeDataSciFi/ledatascifi-2021/issues/new?title=Issue%20on%20page%20%2Flectures/Screenshot of first notebook.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/LeDataSciFi/ledatascifi-2021/issues/new?title=Issue%20on%20page%20%2Flectures/stock_prices.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/LeDataSciFi/ledatascifi-2021/edit/main/lectures/Screenshot of first notebook.ipynb"><button
+        <a class="edit-button" href="https://github.com/LeDataSciFi/ledatascifi-2021/edit/main/lectures/stock_prices.ipynb"><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
     </div>
@@ -291,7 +296,7 @@
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://mybinder.org/v2/gh/LeDataSciFi/ledatascifi-2021/main?urlpath=lab/tree/lectures/Screenshot of first notebook.ipynb"><button type="button"
+        <a class="binder-button" href="https://mybinder.org/v2/gh/LeDataSciFi/ledatascifi-2021/main?urlpath=lab/tree/lectures/stock_prices.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="../_static/images/logo_binder.svg"
@@ -299,7 +304,7 @@
         
         
         
-        <a class="colab-button" href="https://colab.research.google.com/github/LeDataSciFi/ledatascifi-2021/blob/main/lectures/Screenshot of first notebook.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+        <a class="colab-button" href="https://colab.research.google.com/github/LeDataSciFi/ledatascifi-2021/blob/main/lectures/stock_prices.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
                 title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
                     src="../_static/images/logo_colab.png"
                     alt="Interact on Colab">Colab</button></a>
@@ -313,38 +318,6 @@
     <!-- Table of contents -->
     <div class="d-none d-md-block col-md-2 bd-toc show">
         
-        <div class="tocsection onthispage pt-5 pb-3">
-            <i class="fas fa-list"></i> Contents
-        </div>
-        <nav id="bd-toc-nav">
-            <ul class="nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#for-a-subheader-type-subheader-text">
-   For a subheader, type
-   <code class="docutils literal notranslate">
-    <span class="pre">
-     ##
-    </span>
-    <span class="pre">
-     Subheader
-    </span>
-    <span class="pre">
-     Text
-    </span>
-   </code>
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#you-can-do-up-to-6-levels-of-subsubsubsubsubsub-headers">
-     You can do up to 6 levels of subsubsubsubsubsub headers
-    </a>
-   </li>
-  </ul>
- </li>
-</ul>
-
-        </nav>
-        
     </div>
 </div>
     <div id="main-content" class="row">
@@ -352,45 +325,78 @@
         
               <div>
                 
-  <div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">L</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">]</span> <span class="c1"># define a list with 1-5</span>
-<span class="n">L</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>      <span class="c1"># &quot;pop&quot; removes an element</span>
-<span class="n">L</span>             <span class="c1"># if the last element of a cell is an object</span>
-              <span class="c1"># executing the cell will print it, like this:</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1, 2, 3, 4]
-</pre></div>
-</div>
-</div>
-</div>
-<div class="section" id="this-is-a-header-which-i-got-by-putting-this-at-the-beginning">
-<h1>This is a header, which I got by putting <code class="docutils literal notranslate"><span class="pre">#</span> <span class="pre">This...</span></code> at the beginning<a class="headerlink" href="#this-is-a-header-which-i-got-by-putting-this-at-the-beginning" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="for-a-subheader-type-subheader-text">
-<h2>For a subheader, type <code class="docutils literal notranslate"><span class="pre">##</span> <span class="pre">Subheader</span> <span class="pre">Text</span></code><a class="headerlink" href="#for-a-subheader-type-subheader-text" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="you-can-do-up-to-6-levels-of-subsubsubsubsubsub-headers">
-<h3>You can do up to 6 levels of subsubsubsubsubsub headers<a class="headerlink" href="#you-can-do-up-to-6-levels-of-subsubsubsubsubsub-headers" title="Permalink to this headline">¶</a></h3>
-<p>I switched this cell to “Markdown” instead of code to write something for readers. Let’s add a new cell below. You can click on <code class="docutils literal notranslate"><span class="pre">Insert</span></code> above and then <code class="docutils literal notranslate"><span class="pre">Insert</span> <span class="pre">Cell</span> <span class="pre">Below</span></code>. However, my preferred way to do this is with keyboard shortcuts. <strong>I’ll type <code class="docutils literal notranslate"><span class="pre">SHIFT+ENTER</span></code> to “execute” this markdown</strong>, which executes this cell and creates a new cell below it.</p>
+  <div class="section" id="a-simple-program">
+<h1>A “Simple Program”<a class="headerlink" href="#a-simple-program" title="Permalink to this headline">¶</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The first element in a python list is not number 1, but number 0, so L[0] returns: &quot;</span><span class="p">,</span> <span class="n">L</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Python also can count backwards within a list, so L[-1] is:                        &quot;</span><span class="p">,</span><span class="n">L</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hit CTRL+ENTER to execute this cell&quot;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="ch">#!pip install pandas_datareader # uncomment and run this to install pandas data reader</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_remove_output docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas_datareader</span> <span class="k">as</span> <span class="nn">pdr</span> <span class="c1"># you might need to install this (see above)</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="kn">import</span> <span class="nn">statsmodels.api</span> <span class="k">as</span> <span class="nn">sm</span>
+<span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
+
+<span class="c1"># don&#39;t copy and paste these lists and number in several places </span>
+<span class="c1"># (which is what the original &quot;simple program&quot; did... that&#39;s bad programming!)</span>
+<span class="c1"># instead, create a var - if we change it here, it changes everywhere</span>
+<span class="n">stocks</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;GME&#39;</span><span class="p">,</span><span class="s1">&#39;AMC&#39;</span><span class="p">,</span><span class="s1">&#39;BB&#39;</span><span class="p">]</span>
+<span class="n">start_yr</span> <span class="o">=</span> <span class="n">datetime</span><span class="p">(</span><span class="mi">2021</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># load</span>
+<span class="n">stock_prices</span> <span class="o">=</span> <span class="n">pdr</span><span class="o">.</span><span class="n">get_data_yahoo</span><span class="p">(</span><span class="n">stocks</span><span class="p">,</span> <span class="n">start</span><span class="o">=</span><span class="n">start_yr</span><span class="p">)</span>
+<span class="n">stock_prices</span> <span class="o">=</span> <span class="n">stock_prices</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">like</span><span class="o">=</span><span class="s1">&#39;Adj Close&#39;</span><span class="p">)</span> <span class="c1"># reduce to just columns with this in the name</span>
+<span class="n">stock_prices</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="n">stocks</span> <span class="c1"># put their tickers as column names</span>
+<span class="n">stock_prices</span> <span class="c1"># print</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_remove_output docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># this is wide data... so if we want to create a new variable, we have to do it once for each firm...</span>
+<span class="c1"># what if we have 1000 firms? seems tough to do...</span>
+<span class="c1"># make long/tidy:</span>
+<span class="n">stock_prices</span> <span class="o">=</span> <span class="n">stock_prices</span><span class="o">.</span><span class="n">stack</span><span class="p">()</span><span class="o">.</span><span class="n">swaplevel</span><span class="p">()</span><span class="o">.</span><span class="n">sort_index</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+<span class="n">stock_prices</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Firm&#39;</span><span class="p">,</span><span class="s1">&#39;Date&#39;</span><span class="p">,</span><span class="s1">&#39;Adj Close&#39;</span><span class="p">]</span>
+<span class="n">stock_prices</span> <span class="c1"># print - now that is formatted nicely, like CRSP! </span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_remove_output docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># add return var.</span>
+<span class="c1"># MAKE SURE YOU CREATE THE VARIABLES WITHIN EACH FIRM - use groupby</span>
+<span class="n">stock_prices</span><span class="p">[</span><span class="s1">&#39;ret&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">stock_prices</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;Firm&#39;</span><span class="p">)[</span><span class="s1">&#39;Adj Close&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">pct_change</span><span class="p">()</span>
+<span class="n">stock_prices</span> <span class="c1"># print - the first ret for each firm should be missing...</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">stock_prices</span>
+     <span class="o">.</span><span class="n">assign</span><span class="p">(</span><span class="n">ret</span><span class="o">=</span><span class="mi">1</span><span class="o">+</span><span class="n">stock_prices</span><span class="o">.</span><span class="n">ret</span><span class="p">)</span>              <span class="c1"># gross returns</span>
+     <span class="o">.</span><span class="n">set_index</span><span class="p">([</span><span class="s1">&#39;Date&#39;</span><span class="p">,</span><span class="s1">&#39;Firm&#39;</span><span class="p">])[</span><span class="s1">&#39;ret&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">unstack</span><span class="p">()</span> <span class="c1"># convert to wide format</span>
+     <span class="o">.</span><span class="n">cumprod</span><span class="p">()</span>
+     <span class="o">.</span><span class="n">plot</span><span class="p">()</span>
+<span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The first element in a python list is not number 1, but number 0, so L[0] returns:  1
-Python also can count backwards within a list, so L[-1] is:                         4
-Hit CTRL+ENTER to execute this cell
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;AxesSubplot:xlabel=&#39;Date&#39;&gt;
 </pre></div>
 </div>
-</div>
-</div>
-<p>The border indicates that this is the cell you are actively editing. Jupyter text</p>
+<img alt="../_images/stock_prices_5_1.png" src="../_images/stock_prices_5_1.png" />
 </div>
 </div>
 </div>
