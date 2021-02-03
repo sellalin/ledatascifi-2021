@@ -59,5 +59,10 @@
     - file: "content/01/02_Setup"
     - file: "content/01/03_github"
     - file: "content/01/04_Markdown"
-    
+    - file: "content/01/05_jupyterlab"
+      title: "Jupyter Lab Basics"    
+    - file: "content/01/06_python"
+      title: "Python Basics"    
+    - file: "content/01/07_debugging"
+      title: "Python Basics"    
 

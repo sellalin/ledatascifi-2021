@@ -9,7 +9,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
 
-<title>L1_intro_github slides</title>
+<title>L2_jupyterlab slides</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13209,12 +13209,21 @@ a.anchor-link {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Hello-everyone!">Hello everyone!<a class="anchor-link" href="#Hello-everyone!">&#182;</a></h1><p>Our plan for the day:</p>
 <ol>
-<li>Motivation</li>
-<li>Icebreaker</li>
-<li>Expectations and norms</li>
-<li>Github - jump in head first</li>
-<li>Navigating the website site and GH org</li>
-<li>Before next time...</li>
+<li><p>Any issues with the tasks, or questions before we begin?</p>
+<p><em><strong>Reminder: Save code we do in class to your repo for participation credit</strong></em></p>
+</li>
+<li><p>Big picture</p>
+</li>
+<li>Learning by doing <ol>
+<li>Opening Jupyter Lab and exploring the interface</li>
+<li>Creating our first file and exploring "notebooks"</li>
+</ol>
+</li>
+<li>Time pending:<ul>
+<li>A preview</li>
+<li>More practice</li>
+</ul>
+</li>
 </ol>
 
 </div>
@@ -13223,18 +13232,11 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Motivation">Motivation<a class="anchor-link" href="#Motivation">&#182;</a></h2><p>You're here, so I'm guessing you know how buzzy "Big Data" and "Machine Learning" are.</p>
-<p>At the end of this class, the goal is that you'll be able to confidently add some skills to the bottom of your resume and benefit from that.</p>
-<p><img src="https://media.giphy.com/media/znSg4sT0ivRdu/giphy.gif" alt=""></p>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="https://media.giphy.com/media/HPMTb7m5ehAUE/giphy.gif" alt=""></p>
-<p><em>I hope you're a fan of bad gif humor... You'll have to deal with it - I live in this basement now, gif humor is all I have left.</em></p>
+<h2 id="Big-picture">Big picture<a class="anchor-link" href="#Big-picture">&#182;</a></h2><ul>
+<li><code>python</code> is a programming language </li>
+<li>.<code>py</code> files are text files that exclusively contain python code. </li>
+<li><code>py</code> files can not show results - you have to output any graphs or tables to new files. </li>
+</ul>
 
 </div>
 </div>
@@ -13242,117 +13244,8 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>But even if you don't ever code again, we are going to learn skills that are valuable anyways:</p>
-<ul>
-<li>Defining problems clearly </li>
-<li>Working collaboratively</li>
-<li>Delivering work product</li>
-<li>Having a baseline to detect Gold from Fool's Gold when someone pitches something as "Big Data"</li>
-</ul>
-
-</div>
-</div>
-</div></div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Let's-do-an-icebreaker!">Let's do an icebreaker!<a class="anchor-link" href="#Let's-do-an-icebreaker!">&#182;</a></h2><ul>
-<li>First: My thanks to everyone that set up their GH, added a photo, and filled out the survey<ul>
-<li>If you haven't joined the org yet: please do so now: <a href="https://classroom.github.com/a/ktlJQNlI">https://classroom.github.com/a/ktlJQNlI</a></li>
-<li>After you join it, I'll invite you to the org as a member, and to the "classmates" team. Make sure you get in!</li>
-</ul>
-</li>
-</ul>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>Second: Let's run a poll!</li>
-</ul>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>Third: Well, let's come back to this</li>
-</ul>
-
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Expectations-and-norms">Expectations and norms<a class="anchor-link" href="#Expectations-and-norms">&#182;</a></h2><p>I'm going to work hard to make this as close to "normal" as pandemicollege can be</p>
-<ul>
-<li>In person sessions (TBA later)</li>
-<li>Lots of office hours</li>
-<li>I'll be on Zoom at least 10 min before and after class - please drop in to say hi and "Whoa, you see \$GME today? RIP my loans." (or whatever...)</li>
-<li>A few other tricks up my sleeve</li>
-</ul>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Please turn your webcams on at all times.</strong></p>
-<p>You can still wear pajamas, NP.</p>
-<p>But it really makes a difference.</p>
-<p><em>Related note on grades: I'll take "screenshot attendance" randomly during the semester - if your camera is on, points. If you have a strong reason you don't want it on, please let me know. But seeing everyone helps a ton!</em></p>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Zoom style:</p>
-<ul>
-<li>Please interrupt when you have a question!</li>
-<li>You can chat at me if you want to type it out, and chat amongst yourselves if you are working through a problem together</li>
-</ul>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>The website and notes are not comprehensive - this is on purpose, to encourage you to look around the web for answers.</p>
-<p>The "help &amp; resources" page has good suggestions for high quality places to look for answers when you get stuck.</p>
-<p>It also has tips for asking better questions to get <em>better</em> help.</p>
-
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Enough-already!-Let's-get-going!">Enough already! Let's get going!<a class="anchor-link" href="#Enough-already!-Let's-get-going!">&#182;</a></h2><p>This class depends heavily on GitHub, so let's jump in.</p>
-<p>GitHub is good for</p>
-<ul>
-<li>cloud storage</li>
-<li>collaboration</li>
-<li>version control</li>
-</ul>
-<p>It's like Word's Track Changes had a baby with Dropbox, and it was marketed to and designed for software developers.</p>
-
-</div>
-</div>
-</div><div class="fragment">
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="img/weirdbaby.png" alt=""></p>
+<p>That last feature is a bummer. <strong>There must be a better way!</strong></p>
+<p><img src="https://media.giphy.com/media/xsATxBQfeKHCg/giphy.gif" alt=""></p>
 
 </div>
 </div>
@@ -13360,15 +13253,7 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We need to know how to</p>
-<ol>
-<li>Create a repo</li>
-<li>Clone it to our computer to work on it</li>
-<li>Work in the cloud (sometimes it is quicker)</li>
-<li>Fetch updates from the cloud before you start working (avoid disaster!)</li>
-<li>Work on your computer</li>
-<li>Push changes from your computer to the cloud.</li>
-</ol>
+<p><img src="https://media.giphy.com/media/zvYnqgajTM6MU/giphy.gif" alt=""></p>
 
 </div>
 </div>
@@ -13376,8 +13261,29 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a href="http://phdcomics.com/comics/archive/phd101212s.gif">The usual form of collaboration disaster:</a></p>
-<p><img src="http://phdcomics.com/comics/archive/phd101212s.gif" alt="phdcomic" height="300"/></p>
+<p><img src="https://media.giphy.com/media/3oEduNF7DlpxgcHVJe/giphy.gif" alt=""></p>
+<p>Put that in the Guggenheim.</p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="https://media.giphy.com/media/B4fRSZgj8XUOY/source.gif" alt=""></p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Enter notebook files!</p>
+<ul>
+<li><code>.ipynb</code> ("notebook") files mix python code with formatted markdown text and the output from code!</li>
+<li>&rarr; better analysis! ("reproducible, reusable, and shareable")</li>
+</ul>
+<p>And <strong>Jupyter Lab</strong> is how we will make our Jupyter notebooks</p>
 
 </div>
 </div>
@@ -13385,73 +13291,20 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Let's-practice-all-that!">Let's practice all that!<a class="anchor-link" href="#Let's-practice-all-that!">&#182;</a></h3><p>Again, the plan is:</p>
-<ol>
-<li>Create a repo</li>
-<li>Clone it to our computer to work on it</li>
-<li>Work in the cloud (sometimes it is quicker)</li>
-<li>Fetch updates from the cloud before you start working (avoid disaster!)</li>
-<li>Work on your computer</li>
-<li>Push changes from your computer to the cloud.</li>
-</ol>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>ONE: Make a participation repo called "Class Notes"</p>
+<h2 id="A-quick-tour-of-Jupyter-Lab">A quick tour of Jupyter Lab<a class="anchor-link" href="#A-quick-tour-of-Jupyter-Lab">&#182;</a></h2><p>Open Jupyter Lab:</p>
 <ul>
-<li>Make it private, and initialize with a README file</li>
-<li>The repo on GitHub.com is called the "master" or "origin" repo. </li>
+<li>Windows: Open Anaconda Prompt and type <code>jupyter lab</code> and hit enter</li>
+<li>Mac: Open a terminal window and type <code>jupyter lab</code> and hit enter</li>
 </ul>
-<p>TWO: "Clone" that to your computer.</p>
+<p>OK, what are we looking at?</p>
 <ul>
-<li>The folder and files on your computer are called the "remote" repo. </li>
-</ul>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>THREE: Modify the repo <strong>in the cloud</strong> and, then, "fetch" those changes to your computer. Think of "fetch" as syncing your computer to catch up with any changes in the master.</p>
-<ul>
-<li>In the cloud:<ol>
-<li>Go to the webpage of the repo, and click on the pencil next to the readme</li>
-<li>This is the "front page" of your repo, so let's make it useful to visitors (including future you!)</li>
-<li>Let's add: Name, class, semester, major, graduation date (demo headers, bold and italics)</li>
-<li>"Commit" the changes to "save" it. Make a basic note of what your changes are.</li>
-</ol>
-</li>
-<li>On your computer:<ol>
-<li>Look at the folder for this. The README hasn't changed yet!</li>
-<li>Open GitHub Desktop, select that repo (in the upper left), and "fetch origin"</li>
-</ol>
-</li>
-</ul>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>FOUR: Modify the repo <strong>on your computer</strong>, and then, "push" those changes to the cloud. Think of "push" as syncing the master to catch up with any changes from your computer.</p>
-<ul>
-<li>Open the README.md in a text editor, and add your dream job.</li>
-<li>Let's call this bio section "About me", and add a section for "About this repo and class" below it.</li>
-<li>That text formatting I just did is called "markdown" (thus the filetype is MD)</li>
-<li><em><strong>There are some good resources on the website in the text book section about markdown formatting.</strong></em></li>
-<li>Let's make a commit. <ul>
-<li>Save the text file, then open GH Desktop.</li>
-<li>Type "sectioned readme" in the Summary box, and click commit. (But don't "push" it yet!)</li>
+<li>This is a browser based editor</li>
+<li>Notice your prompt/terminal is running in the background<ul>
+<li><em>HINT</em> : If you need another prompt/terminal to do something else, just open a second one</li>
 </ul>
 </li>
-<li>Now, go back to the file, and add some more info to the "About this repo and class section" from the next slide:</li>
 </ul>
+<p><strong>Now, let me give you a little tour (just watch me!)</strong></p>
 
 </div>
 </div>
@@ -13459,20 +13312,20 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>I'll copy this into the chat, you can paste it into your file.</p>
-
-<pre><code>Key links:
-- [The main website](https://ledatascifi.github.io)
-- [The dashboard](https://ledatascifi.github.io/ledatascifi-2021/content/about/schedule.html)
-- [Tips](https://ledatascifi.github.io/ledatascifi-2021/content/about/tips.html)
-- [Help](https://ledatascifi.github.io/ledatascifi-2021/content/about/resources.html)
-- [The LDSF org](https://github.com/orgs/LeDataSciFi)
-- [Announcements, discussions, and help](https://github.com/orgs/LeDataSciFi/teams/classmates)
-- [Lecture files (e.g. "powerpoints")](https://github.com/LeDataSciFi/ledatascifi-2021/tree/main/lectures)</code></pre>
+<p>I'll cover...</p>
 <ul>
-<li>Then, in GH Desktop, summarize this commit as "key links"</li>
-<li>Now, push that by clicking the blue button</li>
-<li>Now refresh the repo on the website... :)</li>
+<li>The left sidebar<ul>
+<li><strong>The file browser:</strong> Navigating to my project folder</li>
+<li>Kernels: A list of running code</li>
+<li>Commands: Has a lot of actions, and short cuts are listed</li>
+<li>Extensions: VERY useful to make JLab more powerful </li>
+</ul>
+</li>
+<li>The main work area <ul>
+<li>you arrange documents (notebooks, text files, etc.) and other activities (terminals, code consoles, etc.) into panels </li>
+<li>each panel can have many tabs open </li>
+</ul>
+</li>
 </ul>
 
 </div>
@@ -13481,54 +13334,154 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Well,-how-did-we-do?">Well, how did we do?<a class="anchor-link" href="#Well,-how-did-we-do?">&#182;</a></h3><ul>
-<li><p>If you made it through that, awesome!</p>
-</li>
-<li><p>If not, you can find this lecture in the <code>LeDataSciFi/ledatascifi-2021</code> repo, inside the "lectures" folder, to help you replicate it.</p>
-</li>
-<li><p>REGARDLESS: Keep all the files you work on during class inside this <code>Class Notes</code> repo</p>
-</li>
+<h2 id="Our-first-notebook-file">Our first notebook file<a class="anchor-link" href="#Our-first-notebook-file">&#182;</a></h2><p><strong>But first!</strong> Let's put <a href="https://ledatascifi.github.io/ledatascifi-2021/content/assignments/howto_do.html#working-on-assignments-projects-taking-notes">tips on working</a> into practice:</p>
+<ul>
+<li>Open github desktop</li>
+<li>"Fetch" your class notes repo (probably nothing changed, but its a good habit!)</li>
+</ul>
+<p><strong>Now we are ready to code!</strong></p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Before each class starts, you should have already</p>
+<ul>
+<li>"fetched" your class notes repo </li>
+<li>opened JLab to that folder</li>
+</ul>
+<p>And at the end of each class,</p>
+<ul>
+<li>save all open code files, </li>
+<li>close JLab (and the terminal running it)</li>
+<li>commit and push your Class Notes repo</li>
 </ul>
 
 </div>
 </div>
-</div><div class="fragment">
+</div></section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Why-save-all-your-notes-from-class-(aside-from-the-usual-&quot;learning&quot;-reasons)?">Why save all your notes from class (aside from the usual "learning" reasons)?<a class="anchor-link" href="#Why-save-all-your-notes-from-class-(aside-from-the-usual-&quot;learning&quot;-reasons)?">&#182;</a></h3><p>Because in class coding files are an <em>"effort"</em> part of the participation grade.</p>
-<p>Just work in class as much as you can, take notes, try the exercises, and that portion of the grade will be good.</p>
+<h3 id="Enough-already,-let's-&quot;code&quot;!">Enough already, let's "code"!<a class="anchor-link" href="#Enough-already,-let's-&quot;code&quot;!">&#182;</a></h3><h4 id="Step-1:-Create-the-file">Step 1: Create the file<a class="anchor-link" href="#Step-1:-Create-the-file">&#182;</a></h4><ol>
+<li><p>create a folder inside your class notes folder called codebook</p>
+<p>right click in file epxlorer pane and select "New Folder", then name it "Codebook"</p>
+</li>
+<li><p>create a "" file</p>
+<p>Hit  the $+$ button, then under "Notebook", click on "Python 3"</p>
+</li>
+<li><p>rename that file "Using JupyterLab-Basics"</p>
+<p>right click the file in the file browser, or the tab the file opened in, and pick "rename"</p>
+</li>
+<li><p>save it (CTRL+S on windows, Apple+S on mac)</p>
+</li>
+</ol>
 
 </div>
 </div>
-</div></div></section></section><section><section>
+</div></section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Navigating-the-website-site-and-GH-org">Navigating the website site and GH org<a class="anchor-link" href="#Navigating-the-website-site-and-GH-org">&#182;</a></h2><p>Let's finish by going over a few things:</p>
+<h4 id="Step-2:-Modifying-our-notebook">Step 2: Modifying our notebook<a class="anchor-link" href="#Step-2:-Modifying-our-notebook">&#182;</a></h4><p>Let's type some Python in the notebook:</p>
+
+<pre><code>L=[1,2,3,4,5] # define a list with 1-5
+L.pop(4)      # "pop" removes an element
+L             # if the last element of a cell is an object
+              # executing the cell will print it, like this:</code></pre>
+<ul>
+<li>Do you notice the syntax coloring?</li>
+<li>The hashtags/pound signs are the "comment signal". They tell Python to ignore everything to the right of it on that line, so that you can write notes to anyone looking at the code.</li>
+</ul>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Ok, let's run that code! Hit <kbd> ctrl </kbd>+ <kbd> enter</kbd></p>
+<p>Do you see the number to the left of it? That helps you track the order in which each cell was run.</p>
+<p>Hit <kbd> ctrl </kbd>+ <kbd> enter</kbd>  again. See the number change?</p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Stop!-Let-me-show-you-something-important!">Stop! Let me show you something important!<a class="anchor-link" href="#Stop!-Let-me-show-you-something-important!">&#182;</a></h2><p><strong>The point of code is that someone can open the file, run it from beginning to end, and get the same results you did!</strong></p>
+<p>You should check that your files work like you think they do every 15-30 minutes and EVERY TIME you think you are done by</p>
 <ol>
-<li>You can flip through the website with arrow keys, and the search bar "mostly" works. <ul>
-<li>Notice the icons at the top of the pages!</li>
+<li>Clicking the "Kernel" menu, then, "Restart Kernel and clear all outputs". </li>
+<li>Then rerun the code: Open the "run" menu, then "run all cells"</li>
+</ol>
+<p>Let me show you an example of why this is important:</p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Let me show you an example of why this is important:</p>
+
+<pre><code>a=2                                     # run first
+print("Coffee costs",a+3,"dollars")     # run second, run fourth
+a=4                                     # run third
+# someone opens this file of yours and sees that it says coffee is $7
+# after running these, the code says coffee is only $5!!!
+# this is a disaster!</code></pre>
+<p>This example seems silly, but I saw it on 20-30% of assignments for the first month last year.</p>
+<p>The easiest way to see if this might happen: Just look at all the #s to the left of code blocks. They should be in order from 1 up.</p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Back-to-using-Jupyter-Lab">Back to using Jupyter Lab<a class="anchor-link" href="#Back-to-using-Jupyter-Lab">&#182;</a></h3><ol>
+<li>Add a new cell below by <em><strong>clicking</strong></em> the plus button on this panel.</li>
+<li>Add a new cell below by <em><strong>keyboard shortcut</strong></em>. To do that, we need a quick digression on Jupyter's modal editing system. Let's look at the textbook.</li>
+</ol>
+<p>The modal behavior of the Jupyter notebook is a little tricky at first but very efficient when you get used to it.</p>
+<p>So, click <kbd> ESC </kbd> to switch to command mode, then <kbd> B </kbd> to insert a cell <strong>B</strong> elow.</p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol start="3">
+  <li>Switch the inserted cell to markdown (via the markdown/code drop down box) and write several lines.</li>
+  <li>Split the markdown cell in half and insert a cell in the middle of those halves. </li>
+     <ul>
+         <li><s>How do you split a cell in half?</s> Better question: Where do you look for an answer about how to do that? </li>
+         <li><b>This is a good time to explore!</b> Take the "user interface tour" under help, then look through the various menus, check out the Keyboard Shortcuts (under the help menu), and then search through the "command palette" (which looks like a keyboard icon at the right side of the Notebook Toolbar). <b>The command palette is very useful because you can search for commands!</b> Return to the shortcut menu and command palette often!!!</li>
+    </ul>     
+ </ol>
+  <ol start="5">
+  <li>Switch that middle cell to "code" mode via keyboard shortcuts. </li>
+  <li>Add a cell at the bottom of the notebook, and then delete it: <code>ESC</code> to go to command mode and then <code>D</code>,<code>D</code> (hit the "d" button twice).</li>    
+</ol>
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="FIN-for-that-walkthrough">FIN for that walkthrough<a class="anchor-link" href="#FIN-for-that-walkthrough">&#182;</a></h2><ol>
+<li>How did we do? <ul>
+<li>Thumb up emoji if you kept up all the way through</li>
+<li>Thumb down if you're quite lost</li>
+<li>Any other emoji for "in the middle"</li>
 </ul>
 </li>
-<li>Please click on the links in your "key links" section and explore the site and the GH org and repos. <ul>
-<li>dashboard page is especially &#11088;</li>
-<li>In the org repo, notice the "issues" tab</li>
-</ul>
-</li>
-<li>The classmate team &#11088; &#11088; - <a href="https://github.com/orgs/LeDataSciFi/teams/classmates">https://github.com/orgs/LeDataSciFi/teams/classmates</a><ul>
-<li>Very useful for getting help from each other via tagging @classmates </li>
-<li>Go to that page, and click <code>Watch</code> to ensure you get announcements!</li>
-<li>You should now get an email notification whenever an Issue is posted by myself, the TA, or if your classmates ask a question.</li>
-<li>If you don't get any email announcements by next Monday, email me - something is wrong!</li>
-</ul>
-</li>
-<li>Pentultimate thing: Icebreaker #3 <ul>
-<li>Post 2 truths and a lie </li>
-<li><em>Notice in the grade section of the website: Posts and replies to the discussion board will help your grade.</em></li>
-<li>Let's do a poll now to see what the class thinks my lie is</li>
-</ul>
-</li>
+<li>Obviously, we will learn much more going forward, but you have enough to play around with Jupyter now. I <strong>highly</strong> recommend doing some introductory Python tutorials over the weekend. The </li>
 </ol>
 
 </div>
@@ -13537,50 +13490,77 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Summary">Summary<a class="anchor-link" href="#Summary">&#182;</a></h2><p>You know how to</p>
-<ol>
-<li>Create a repo</li>
-<li>Clone it to our computer to work on it</li>
-<li>Work in the cloud (sometimes it is quicker)</li>
-<li>Fetch updates from the cloud before you start working (avoid disaster!)</li>
-<li>Work on your computer</li>
-<li>Push changes from your computer to the cloud.</li>
-</ol>
-<p>Now, anytime your do any work: <strong>Fetch early, commit frequently, push often!</strong> &#11088; &#11088; &#11088;</p>
-<p>For more on this process, see <a href="../assignments/howto_do.html#working-on-assignments-projects-taking-notes">the github workflow</a>. &#11088; &#11088; &#11088;</p>
+<h2 id="Tidying-up">Tidying up<a class="anchor-link" href="#Tidying-up">&#182;</a></h2><p>Earlier, I said to</p>
+
+<pre><code>Code must run from beginning to end and produce the same thing every time
+- Restart the kernal and clear output
+- Run all cells
+
+And at the end of each class, 
+- save all open code files, 
+- close JLab (and the terminal running it)
+- commit and push your Class Notes repo
+
+</code></pre>
+<p>Let's do that now!</p>
 
 </div>
 </div>
-</div></section></section><section><section>
+</div></section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Before-next-time">Before next time<a class="anchor-link" href="#Before-next-time">&#182;</a></h2><ol>
-<li>Finish all the tasks on the dashboard page</li>
-<li>Read the GitHub page of the textbook to learn about GitHub issues, why Git $\neq$ GitHub $\neq$ GitHub Desktop, and how to use GitHub to see changes to a project (the "version control" section of the page)</li>
-<li>Any questions you want to cover in the next class? Please let me know via the form (link on the.. you guessed it! The dashboard page.</li>
-</ol>
-
-</div>
-</div>
-</div><div class="fragment">
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Two-great-opportunities:">Two great opportunities:<a class="anchor-link" href="#Two-great-opportunities:">&#182;</a></h3><ol>
-<li>J&amp;J competition (see coursesite)</li>
-<li>FIN388 - small capstone team looking for teammates. &#11088; &#11088;<ul>
-<li>Will spend semester developing fun, real-world FinTech project for a firm. </li>
-<li>Project focuses on credit score products, will have data science component, and examine relevant regulatory factors</li>
-<li>Must have taken FIN330</li>
-<li>Let me know ASAP!</li>
+<h2 id="Summary-Part-1">Summary Part 1<a class="anchor-link" href="#Summary-Part-1">&#182;</a></h2><p>Before each class starts, you should have already</p>
+<ul>
+<li>"fetched" your class notes repo </li>
+<li>opened JLab to that folder</li>
 </ul>
-</li>
-</ol>
+<p>And at the end of each class,</p>
+<ul>
+<li>save all open code files, </li>
+<li>close JLab (and the terminal running it)</li>
+<li>commit and push your Class Notes repo</li>
+<li>open the GitHub.com version of the repo</li>
+</ul>
+<p>Code must run from beginning to end and produce the same thing every time</p>
+<ul>
+<li>Restart the kernal and clear output</li>
+<li>Run all cells</li>
+</ul>
 
 </div>
 </div>
-</div></div></section></section>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Summary-Part-2">Summary Part 2<a class="anchor-link" href="#Summary-Part-2">&#182;</a></h2><p><img src="https://media.giphy.com/media/H7x1H0veAJlo4/giphy.gif" alt=""></p>
+<p>Stuck?</p>
+<ul>
+<li><kbd>shift</kbd> + <kbd>tab</kbd>; help(function); find the documentation via google; stack overflow;</li>
+</ul>
+<p>Over the weekend:</p>
+<ul>
+<li>The task page lists reading to cover and coding to try</li>
+<li>On Monday, we will be coding together - more updates on that soon</li>
+</ul>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="How-much-time-is-left?">How much time is left?<a class="anchor-link" href="#How-much-time-is-left?">&#182;</a></h2><p>Options:</p>
+<ul>
+<li>Highlight "JupyterLab" chapter elements, and have everyone do the walk through of the interface </li>
+<li>A preview of "simple code"</li>
+<li>Start everyone's Notes files with "Practice" and Whirlwind #3</li>
+</ul>
+
+</div>
+</div>
+</div></section></section>
 </div>
 </div>
 
