@@ -1,0 +1,702 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello everyone! &#8212; LeDataSciFi-2021</title>
+    
+  <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/fin377_specialformatting.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.d3f166471bb80abb5163.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../index.html">
+  
+  <img src="../_static/logo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">LeDataSciFi-2021</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <p class="caption collapsible-parent">
+ <span class="caption-text">
+  About the class
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../content/about/objectives.html">
+   Objectives
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../content/about/outcomes.html">
+   Outcomes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../content/about/about_us.html">
+   About us + office hours
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../content/about/structure_and_policies.html">
+   Course structure + policies
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../content/about/gradeoverview.html">
+   Grading
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../content/about/acknowledgments.html">
+   Acknowledgments
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Schedule, tips, resources
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../content/about/schedule.html">
+   Dashboard, key links, schedule
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../content/about/resources.html">
+   Help + resources
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../content/about/tips.html">
+   Tips and hacks
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Assignments and participation
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../content/assignments/howto_do.html">
+   How to start and turn in assignments
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../content/assignments/howto_review.html">
+   How to do peer review
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Textbook
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../content/01/00_Getting_Started.html">
+   1. Motivation and Getting Started
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../content/01/01_Motivation.html">
+     1.1. Motivation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../content/01/02_Setup.html">
+     1.2. Set up
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../content/01/03_github.html">
+     1.3. Github Basics
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../content/01/04_Markdown.html">
+     1.4. Markdown basics
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../content/01/05_jupyterlab.html">
+     1.5. Jupyter Lab Basics
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../content/01/06_python.html">
+     1.6. Python Basics
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../content/01/07_debugging.html">
+     1.7. Python Basics
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/lectures/L2_jupyterlab.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+        <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/LeDataSciFi/ledatascifi-2021"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/LeDataSciFi/ledatascifi-2021/issues/new?title=Issue%20on%20page%20%2Flectures/L2_jupyterlab.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/LeDataSciFi/ledatascifi-2021/edit/main/lectures/L2_jupyterlab.ipynb"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/LeDataSciFi/ledatascifi-2021/main?urlpath=lab/tree/lectures/L2_jupyterlab.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        <a class="colab-button" href="https://colab.research.google.com/github/LeDataSciFi/ledatascifi-2021/blob/main/lectures/L2_jupyterlab.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
+        
+    </div>
+</div>
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#big-picture">
+   Big picture
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#a-quick-tour-of-jupyter-lab">
+   A quick tour of Jupyter Lab
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#our-first-notebook-file">
+   Our first notebook file
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#enough-already-let-s-code">
+     Enough already, let’s “code”!
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#step-1-create-the-file">
+       Step 1: Create the file
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#step-2-modifying-our-notebook">
+       Step 2: Modifying our notebook
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#stop-let-me-show-you-something-important">
+   Stop! Let me show you something important!
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#back-to-using-jupyter-lab">
+     Back to using Jupyter Lab
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#fin-for-that-walkthrough">
+   FIN for that walkthrough
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tidying-up">
+   Tidying up
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#summary-part-1">
+   Summary Part 1
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#summary-part-2">
+   Summary Part 2
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#how-much-time-is-left">
+   How much time is left?
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="hello-everyone">
+<h1>Hello everyone!<a class="headerlink" href="#hello-everyone" title="Permalink to this headline">¶</a></h1>
+<p>Our plan for the day:</p>
+<ol>
+<li><p>Any issues with the tasks, or questions before we begin?</p>
+<p><em><strong>Reminder: Save code we do in class to your repo for participation credit</strong></em></p>
+</li>
+<li><p>Big picture</p></li>
+<li><p>Learning by doing</p>
+<ol class="simple">
+<li><p>Opening Jupyter Lab and exploring the interface</p></li>
+<li><p>Creating our first file and exploring “notebooks”</p></li>
+</ol>
+</li>
+<li><p>Time pending:</p>
+<ul class="simple">
+<li><p>A preview</p></li>
+<li><p>More practice</p></li>
+</ul>
+</li>
+</ol>
+<div class="section" id="big-picture">
+<h2>Big picture<a class="headerlink" href="#big-picture" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">python</span></code> is a programming language</p></li>
+<li><p>.<code class="docutils literal notranslate"><span class="pre">py</span></code> files are text files that exclusively contain python code.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">py</span></code> files can not show results - you have to output any graphs or tables to new files.</p></li>
+</ul>
+<p>That last feature is a bummer. <strong>There must be a better way!</strong></p>
+<p><img alt="" src="https://media.giphy.com/media/xsATxBQfeKHCg/giphy.gif" /></p>
+<p><img alt="" src="https://media.giphy.com/media/zvYnqgajTM6MU/giphy.gif" /></p>
+<p><img alt="" src="https://media.giphy.com/media/3oEduNF7DlpxgcHVJe/giphy.gif" /></p>
+<p>Put that in the Guggenheim.</p>
+<p><img alt="" src="https://media.giphy.com/media/B4fRSZgj8XUOY/source.gif" /></p>
+<p>Enter notebook files!</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">.ipynb</span></code> (“notebook”) files mix python code with formatted markdown text and the output from code!</p></li>
+<li><p>→ better analysis! (“reproducible, reusable, and shareable”)</p></li>
+</ul>
+<p>And <strong>Jupyter Lab</strong> is how we will make our Jupyter notebooks</p>
+</div>
+<div class="section" id="a-quick-tour-of-jupyter-lab">
+<h2>A quick tour of Jupyter Lab<a class="headerlink" href="#a-quick-tour-of-jupyter-lab" title="Permalink to this headline">¶</a></h2>
+<p>Open Jupyter Lab:</p>
+<ul class="simple">
+<li><p>Windows: Open Anaconda Prompt and type <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">lab</span></code> and hit enter</p></li>
+<li><p>Mac: Open a terminal window and type <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">lab</span></code> and hit enter</p></li>
+</ul>
+<p>OK, what are we looking at?</p>
+<ul class="simple">
+<li><p>This is a browser based editor</p></li>
+<li><p>Notice your prompt/terminal is running in the background</p>
+<ul>
+<li><p><em>HINT</em> : If you need another prompt/terminal to do something else, just open a second one</p></li>
+</ul>
+</li>
+</ul>
+<p><strong>Now, let me give you a little tour (just watch me!)</strong></p>
+<p>I’ll cover…</p>
+<ul class="simple">
+<li><p>The left sidebar</p>
+<ul>
+<li><p><strong>The file browser:</strong> Navigating to my project folder</p></li>
+<li><p>Kernels: A list of running code</p></li>
+<li><p>Commands: Has a lot of actions, and short cuts are listed</p></li>
+<li><p>Extensions: VERY useful to make JLab more powerful</p></li>
+</ul>
+</li>
+<li><p>The main work area</p>
+<ul>
+<li><p>you arrange documents (notebooks, text files, etc.) and other activities (terminals, code consoles, etc.) into panels</p></li>
+<li><p>each panel can have many tabs open</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="our-first-notebook-file">
+<h2>Our first notebook file<a class="headerlink" href="#our-first-notebook-file" title="Permalink to this headline">¶</a></h2>
+<p><strong>But first!</strong> Let’s put <a class="reference external" href="https://ledatascifi.github.io/ledatascifi-2021/content/assignments/howto_do.html#working-on-assignments-projects-taking-notes">tips on working</a> into practice:</p>
+<ul class="simple">
+<li><p>Open github desktop</p></li>
+<li><p>“Fetch” your class notes repo (probably nothing changed, but its a good habit!)</p></li>
+</ul>
+<p><strong>Now we are ready to code!</strong></p>
+<p>Before each class starts, you should have already</p>
+<ul class="simple">
+<li><p>“fetched” your class notes repo</p></li>
+<li><p>opened JLab to that folder</p></li>
+</ul>
+<p>And at the end of each class,</p>
+<ul class="simple">
+<li><p>save all open code files,</p></li>
+<li><p>close JLab (and the terminal running it)</p></li>
+<li><p>commit and push your Class Notes repo</p></li>
+</ul>
+<div class="section" id="enough-already-let-s-code">
+<h3>Enough already, let’s “code”!<a class="headerlink" href="#enough-already-let-s-code" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="step-1-create-the-file">
+<h4>Step 1: Create the file<a class="headerlink" href="#step-1-create-the-file" title="Permalink to this headline">¶</a></h4>
+<ol>
+<li><p>create a folder inside your class notes folder called codebook</p>
+<p>right click in file epxlorer pane and select “New Folder”, then name it “Codebook”</p>
+</li>
+<li><p>create a “” file</p>
+<p>Hit  the <span class="math notranslate nohighlight">\(+\)</span> button, then under “Notebook”, click on “Python 3”</p>
+</li>
+<li><p>rename that file “Using JupyterLab-Basics”</p>
+<p>right click the file in the file browser, or the tab the file opened in, and pick “rename”</p>
+</li>
+<li><p>save it (CTRL+S on windows, Apple+S on mac)</p></li>
+</ol>
+</div>
+<div class="section" id="step-2-modifying-our-notebook">
+<h4>Step 2: Modifying our notebook<a class="headerlink" href="#step-2-modifying-our-notebook" title="Permalink to this headline">¶</a></h4>
+<p>Let’s type some Python in the notebook:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">L</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">]</span> <span class="c1"># define a list with 1-5</span>
+<span class="n">L</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>      <span class="c1"># &quot;pop&quot; removes an element</span>
+<span class="n">L</span>             <span class="c1"># if the last element of a cell is an object</span>
+              <span class="c1"># executing the cell will print it, like this:</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Do you notice the syntax coloring?</p></li>
+<li><p>The hashtags/pound signs are the “comment signal”. They tell Python to ignore everything to the right of it on that line, so that you can write notes to anyone looking at the code.</p></li>
+</ul>
+<p>Ok, let’s run that code! Hit <kbd> ctrl </kbd>+ <kbd> enter</kbd></p>
+<p>Do you see the number to the left of it? That helps you track the order in which each cell was run.</p>
+<p>Hit <kbd> ctrl </kbd>+ <kbd> enter</kbd>  again. See the number change?</p>
+</div>
+</div>
+</div>
+<div class="section" id="stop-let-me-show-you-something-important">
+<h2>Stop! Let me show you something important!<a class="headerlink" href="#stop-let-me-show-you-something-important" title="Permalink to this headline">¶</a></h2>
+<p><strong>The point of code is that someone can open the file, run it from beginning to end, and get the same results you did!</strong></p>
+<p>You should check that your files work like you think they do every 15-30 minutes and EVERY TIME you think you are done by</p>
+<ol class="simple">
+<li><p>Clicking the “Kernel” menu, then, “Restart Kernel and clear all outputs”.</p></li>
+<li><p>Then rerun the code: Open the “run” menu, then “run all cells”</p></li>
+</ol>
+<p>Let me show you an example of why this is important:</p>
+<p>Let me show you an example of why this is important:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">a</span><span class="o">=</span><span class="mi">2</span>                                     <span class="c1"># run first</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Coffee costs&quot;</span><span class="p">,</span><span class="n">a</span><span class="o">+</span><span class="mi">3</span><span class="p">,</span><span class="s2">&quot;dollars&quot;</span><span class="p">)</span>     <span class="c1"># run second, run fourth</span>
+<span class="n">a</span><span class="o">=</span><span class="mi">4</span>                                     <span class="c1"># run third</span>
+<span class="c1"># someone opens this file of yours and sees that it says coffee is $7</span>
+<span class="c1"># after running these, the code says coffee is only $5!!!</span>
+<span class="c1"># this is a disaster!</span>
+</pre></div>
+</div>
+<p>This example seems silly, but I saw it on 20-30% of assignments for the first month last year.</p>
+<p>The easiest way to see if this might happen: Just look at all the #s to the left of code blocks. They should be in order from 1 up.</p>
+<div class="section" id="back-to-using-jupyter-lab">
+<h3>Back to using Jupyter Lab<a class="headerlink" href="#back-to-using-jupyter-lab" title="Permalink to this headline">¶</a></h3>
+<ol class="simple">
+<li><p>Add a new cell below by <em><strong>clicking</strong></em> the plus button on this panel.</p></li>
+<li><p>Add a new cell below by <em><strong>keyboard shortcut</strong></em>. To do that, we need a quick digression on Jupyter’s modal editing system. Let’s look at the textbook.</p></li>
+</ol>
+<p>The modal behavior of the Jupyter notebook is a little tricky at first but very efficient when you get used to it.</p>
+<p>So, click <kbd> ESC </kbd> to switch to command mode, then <kbd> B </kbd> to insert a cell <strong>B</strong> elow.</p>
+ <ol start="3">
+  <li>Switch the inserted cell to markdown (via the markdown/code drop down box) and write several lines.</li>
+  <li>Split the markdown cell in half and insert a cell in the middle of those halves. </li>
+     <ul>
+         <li><s>How do you split a cell in half?</s> Better question: Where do you look for an answer about how to do that? </li>
+         <li><b>This is a good time to explore!</b> Take the "user interface tour" under help, then look through the various menus, check out the Keyboard Shortcuts (under the help menu), and then search through the "command palette" (which looks like a keyboard icon at the right side of the Notebook Toolbar). <b>The command palette is very useful because you can search for commands!</b> Return to the shortcut menu and command palette often!!!</li>
+    </ul>     
+ </ol>
+  <ol start="5">
+  <li>Switch that middle cell to "code" mode via keyboard shortcuts. </li>
+  <li>Add a cell at the bottom of the notebook, and then delete it: <code>ESC</code> to go to command mode and then <code>D</code>,<code>D</code> (hit the "d" button twice).</li>    
+</ol> </div>
+</div>
+<div class="section" id="fin-for-that-walkthrough">
+<h2>FIN for that walkthrough<a class="headerlink" href="#fin-for-that-walkthrough" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>How did we do?</p>
+<ul class="simple">
+<li><p>Thumb up emoji if you kept up all the way through</p></li>
+<li><p>Thumb down if you’re quite lost</p></li>
+<li><p>Any other emoji for “in the middle”</p></li>
+</ul>
+</li>
+<li><p>Obviously, we will learn much more going forward, but you have enough to play around with Jupyter now. I <strong>highly</strong> recommend doing some introductory Python tutorials over the weekend. The</p></li>
+</ol>
+</div>
+<div class="section" id="tidying-up">
+<h2>Tidying up<a class="headerlink" href="#tidying-up" title="Permalink to this headline">¶</a></h2>
+<p>Earlier, I said to</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Code must run from beginning to end and produce the same thing every time
+- Restart the kernal and clear output
+- Run all cells
+
+And at the end of each class, 
+- save all open code files, 
+- close JLab (and the terminal running it)
+- commit and push your Class Notes repo
+</pre></div>
+</div>
+<p>Let’s do that now!</p>
+</div>
+<div class="section" id="summary-part-1">
+<h2>Summary Part 1<a class="headerlink" href="#summary-part-1" title="Permalink to this headline">¶</a></h2>
+<p>Before each class starts, you should have already</p>
+<ul class="simple">
+<li><p>“fetched” your class notes repo</p></li>
+<li><p>opened JLab to that folder</p></li>
+</ul>
+<p>And at the end of each class,</p>
+<ul class="simple">
+<li><p>save all open code files,</p></li>
+<li><p>close JLab (and the terminal running it)</p></li>
+<li><p>commit and push your Class Notes repo</p></li>
+<li><p>open the GitHub.com version of the repo</p></li>
+</ul>
+<p>Code must run from beginning to end and produce the same thing every time</p>
+<ul class="simple">
+<li><p>Restart the kernal and clear output</p></li>
+<li><p>Run all cells</p></li>
+</ul>
+</div>
+<div class="section" id="summary-part-2">
+<h2>Summary Part 2<a class="headerlink" href="#summary-part-2" title="Permalink to this headline">¶</a></h2>
+<p><img alt="" src="https://media.giphy.com/media/H7x1H0veAJlo4/giphy.gif" /></p>
+<p>Stuck?</p>
+<ul class="simple">
+<li><p><kbd>shift</kbd> + <kbd>tab</kbd>; help(function); find the documentation via google; stack overflow;</p></li>
+</ul>
+<p>Over the weekend:</p>
+<ul class="simple">
+<li><p>The task page lists reading to cover and coding to try</p></li>
+<li><p>On Monday, we will be coding together - more updates on that soon</p></li>
+</ul>
+</div>
+<div class="section" id="how-much-time-is-left">
+<h2>How much time is left?<a class="headerlink" href="#how-much-time-is-left" title="Permalink to this headline">¶</a></h2>
+<p>Options:</p>
+<ul class="simple">
+<li><p>Highlight “JupyterLab” chapter elements, and have everyone do the walk through of the interface</p></li>
+<li><p>A preview of “simple code”</p></li>
+<li><p>Start everyone’s Notes files with “Practice” and Whirlwind #3</p></li>
+</ul>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./lectures"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Prof. Donald Bowen<br/>
+        
+            &copy; Copyright 2020.<br/>
+          <div class="extra_footer">
+            You're doing well, keep going!
+          </div>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="../_static/js/index.d3f166471bb80abb5163.js"></script>
+
+
+    
+  </body>
+</html>
