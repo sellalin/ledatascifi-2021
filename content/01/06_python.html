@@ -416,6 +416,18 @@
   <a class="reference internal nav-link" href="#how-do-i">
    1.6.5. How do I…?
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#stuck-on-syntax-issues-for-a-function">
+     1.6.5.1. Stuck on syntax issues for a function?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#copy-chunks-of-lecture-files-into-my-own-code">
+     1.6.5.2. Copy chunks of lecture files into my own code?
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -457,11 +469,12 @@
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>Copy all of these code blocks to your own notebook file inside your notes folder and try to run them. Make sure Jupyter Lab calls the cells “code” cells instead of markdown cells, and then use <kbd> CTRL </kbd> + <kbd> ENTER </kbd> to run them.</p>
+<p><strong>HINT:</strong> You can copy <em>code</em> cells on this website by clicking the “copy” symbol in the upper-right corner of code blocks. If you want to copy chunks of files that includes sections of Markdown, watch <a class="reference internal" href="#content-chunkcopy"><span class="std std-ref">this video</span></a>.</p>
 </div>
 <div class="section" id="comments">
 <h3><span class="section-number">1.6.2.1. </span>Comments<a class="headerlink" href="#comments" title="Permalink to this headline">¶</a></h3>
 <p>In python code blocks, the “#” character tells python to ignore the rest of the line.</p>
-<p><strong>Leaving GOOD comments in the code is important!</strong> <a class="reference external" href="https://web.stanford.edu/~gentzkow/research/CodeAndData.xhtml">Good, smart code</a> tries to reduce the use of comments by writing code so obvious that it is “self-documenting” (I’ll explain why later),</p>
+<p><strong>Leaving GOOD comments in the code is important!</strong> <a class="reference external" href="https://web.stanford.edu/~gentzkow/research/CodeAndData.xhtml#magicparlabel-1130">Good, smart code</a> tries to reduce the use of comments by writing code so obvious that it is “self-documenting” (I’ll explain why later),</p>
 <p><strong>But for now… you should err on the side of adding MORE comments</strong>. Why? If you need to take a break and come back at a later point, comments will help to quickly bring you up to speed if you forgot why you put in a particular line of code. Getting in the habit of using comments is smart.</p>
 <p>You’ll become more discerning about comments as you progress. Two articles about how and when to use comments: <a class="reference external" href="https://realpython.com/python-comments-guide/#why-commenting-your-code-is-so-important">this link</a> and <a class="reference external" href="https://realpython.com/documenting-python-code/#why-documenting-your-code-is-so-important">this link</a></p>
 </div>
@@ -629,7 +642,7 @@
 <div class="section" id="common-object-types">
 <h3><span class="section-number">1.6.2.7. </span>Common object types<a class="headerlink" href="#common-object-types" title="Permalink to this headline">¶</a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">Boolean</span></code> and <code class="docutils literal notranslate"><span class="pre">int</span></code> were covered above.</p>
-<p><code class="docutils literal notranslate"><span class="pre">None</span></code>. <a class="reference external" href="https://nbviewer.jupyter.org/github/jakevdp/WhirlwindTourOfPython/blob/master/05-Built-in-Scalar-Types.ipynb#Aside:-Floating-point-precision">See here</a>.</p>
+<p><code class="docutils literal notranslate"><span class="pre">None</span></code>. <a class="reference external" href="https://nbviewer.jupyter.org/github/jakevdp/WhirlwindTourOfPython/blob/master/05-Built-in-Scalar-Types.ipynb#None-Type">See here</a>.</p>
 <p><code class="docutils literal notranslate"><span class="pre">float</span></code>. <strong>WARNING: Beware of comparing floating point numbers!</strong> Below is an example, and see <a class="reference external" href="https://nbviewer.jupyter.org/github/jakevdp/WhirlwindTourOfPython/blob/master/05-Built-in-Scalar-Types.ipynb#Aside:-Floating-point-precision">here for the explanation</a>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -831,6 +844,7 @@ I am here
 </div>
 </div>
 <p>I have one important comment about <code class="docutils literal notranslate"><span class="pre">while</span></code> loops: <strong>Every time through the loop, there must be a chance for the condition to become False. If not, your code will loop forever!</strong></p>
+<p>We won’t use while loops in this class. But if you ever write one, and it is stuck in an infinite loop, you can stop the kernel by typing <kbd>i</kbd>, <kbd>i</kbd>. Or click the “Terminals and Kernels” tab in the left sidebar and “shutdown” next to your code’s filename.</p>
 </div>
 <div class="section" id="writing-your-own-functions">
 <h3><span class="section-number">1.6.2.12. </span>Writing your own functions<a class="headerlink" href="#writing-your-own-functions" title="Permalink to this headline">¶</a></h3>
@@ -1001,9 +1015,29 @@ f(x, a=1, b=1)
 </div>
 <div class="section" id="how-do-i">
 <h2><span class="section-number">1.6.5. </span>How do I…?<a class="headerlink" href="#how-do-i" title="Permalink to this headline">¶</a></h2>
-<p>Stuck on syntax issues for a function? See the tips in the <a class="reference external" href="05_jupyterlab#resources">Jupyter Lab</a> page.</p>
+<div class="section" id="stuck-on-syntax-issues-for-a-function">
+<h3><span class="section-number">1.6.5.1. </span>Stuck on syntax issues for a function?<a class="headerlink" href="#stuck-on-syntax-issues-for-a-function" title="Permalink to this headline">¶</a></h3>
+<p>See the tips in the <a class="reference external" href="05_jupyterlab#resources">Jupyter Lab</a> page.</p>
+</div>
+<div class="section" id="copy-chunks-of-lecture-files-into-my-own-code">
+<span id="content-chunkcopy"></span><h3><span class="section-number">1.6.5.2. </span>Copy chunks of lecture files into my own code?<a class="headerlink" href="#copy-chunks-of-lecture-files-into-my-own-code" title="Permalink to this headline">¶</a></h3>
+<p>I think this is the easiest way:</p>
+<ol class="simple">
+<li><p>Clone the lecture repo to your computer.</p></li>
+<li><p>Open the code you’re working on in Jupyter Lab.</p></li>
+<li><p>Open the lecture code you’re working on in Jupyter Lab in a new tab.</p></li>
+<li><p>Drag the lecture code to the right until it snaps into a new panel.</p></li>
+<li><p>Click and hold to the <strong>left</strong> of the block you want to drag into your code and drag it into your code.</p></li>
+</ol>
+<div class="tip admonition">
+<p class="admonition-title">Pro Tip</p>
+<p>You can select a bunch of code blocks and drag them all at once. To do that, click to the left of a cell you want, hold the shift button, and then click up or down until all the cells you want are highlighted. Then do step 5 above.</p>
+</div>
+<p>Want another amateur youtube video? Here’s one of me showing those steps!</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0XtS-pI9tR8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <hr class="docutils" />
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScLgqMhkNZHFJdeew7q2aAk5crzNdMss_NZ4vC4LKluUuo_pg/viewform?embedded=true" width="640" height="925" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></div>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
