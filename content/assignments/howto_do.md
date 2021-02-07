@@ -122,7 +122,7 @@ The biggies:
 ```{dropdown}  **TIP #5:** Make it easy for others to run your code.
 - At the top of the code, load all packages you need
 - Under that, list parameters a user would set (you obviously choose these during your analysis, but it's nice to see quickly and wholly)
-- Under that, import external files. This makes it easy for someone to see which data files are required and edit the paths if necessary. Even though I said absolute path references are bad just a few paragraphs ago, there are situations where you might not keep data in the repo itself. (Typically: Huge data files or sensitive data subject to privacy issues.) When this is the case and you have to use absolute path references, you want those at the top of your code so people see them!
+- Under that, import external files. This makes it easy for someone to see which data files are required and edit the paths if necessary. Even though I said absolute path references are bad above, there are situations where you might not keep data in the repo itself. (For example: Huge data files or sensitive data subject to privacy issues.) When this is the case and you have to use absolute path references, you want those at the top of your code so people see them!
 - Again, see tip #3 above.
 ```
 
