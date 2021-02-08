@@ -9,7 +9,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
 
-<title>L2_jupyterlab slides</title>
+<title>L3_python slides</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13207,20 +13207,36 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Hello-everyone!">Hello everyone!<a class="anchor-link" href="#Hello-everyone!">&#182;</a></h1><p>Our plan for the day:</p>
-<ol>
-<li><p>Any issues with the tasks, or questions before we begin?</p>
-<p><em><strong>Reminder: Save code we do in class to your repo for participation credit</strong></em></p>
-</li>
-<li><p>Big picture</p>
-</li>
-<li>JLab tour</li>
-<li>Learning by doing <ol>
-<li>Opening Jupyter Lab and exploring the interface</li>
-<li>Creating our first file and exploring "notebooks"</li>
-<li>Practice</li>
+<h2 id="Hello-everyone!-Before-class:">Hello everyone! Before class:<a class="anchor-link" href="#Hello-everyone!-Before-class:">&#182;</a></h2><ol>
+<li>In GH Desktop: Fetch/pull your class notes repo and the lecture repo.</li>
+<li>Copy the textbook file <code>/content/01/06_python.ipynb</code> to your <code>class notes/notes</code> folder</li>
+<li>In JLab: In the class notes repo, inside the "notes" subfolder, start a new file to save our notes from today</li>
+<li>Suggested: Snap those 2 files side-by-side in the JLab window</li>
 </ol>
+<p>Hopefully this goes better than Chrissy Teigen's experience with Py:</p>
+<p><img src="https://media.giphy.com/media/zlXkHKnCXAe9a/giphy.gif" alt=""></p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="First-things-first">First things first<a class="anchor-link" href="#First-things-first">&#182;</a></h2><p>The assignment will be posted ASAP.</p>
+<p>If you didn't receive a notification from GH tonight from my post on the classmates discussion board, please let me or the TA know immediately.</p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Outline">Outline<a class="anchor-link" href="#Outline">&#182;</a></h2><ol>
+<li>Python essentials: Learning by doing<ul>
+<li>Q: Feedback: Did anyone try and like any of the tutorial options?</li>
+</ul>
 </li>
+<li>Debugging </li>
 </ol>
 
 </div>
@@ -13229,10 +13245,65 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Big-picture">Big picture<a class="anchor-link" href="#Big-picture">&#182;</a></h2><ul>
-<li><code>python</code> is a programming language </li>
-<li>.<code>py</code> files are text files that exclusively contain python code. </li>
-<li><code>py</code> files can not show results - you have to output any graphs or tables to new files. </li>
+<h2 id="Guided-discussion-+-practice">Guided discussion + practice<a class="anchor-link" href="#Guided-discussion-+-practice">&#182;</a></h2><p>We will run parts of the textbook file in our open notes file.</p>
+<ol>
+<li>Arithmetic --&gt; 1 practice prob</li>
+<li>Logic/booleans <ul>
+<li>booleans, operators: comparison, logic, membership</li>
+<li>for now: don't use <code>is</code> or <code>is not</code>! (let's make a cell for "warnings")</li>
+<li>complex logic gates</li>
+</ul>
+</li>
+<li>Key lessons: Naming objects, <code>&lt;TAB&gt;</code> and <code>&lt;SHIFT&gt;+&lt;TAB&gt;</code>, pointers, Objects, </li>
+<li>Data structures: lists, tuple, dict, set (next slide), then practice</li>
+</ol>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Built-in-data-structures">Built in data structures<a class="anchor-link" href="#Built-in-data-structures">&#182;</a></h3><p>Listed from most commonly used to least:</p>
+<table>
+<thead><tr>
+<th>Type Name</th>
+<th>Example</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>list</td>
+<td>[1, 2, 3]</td>
+<td>Ordered collection</td>
+</tr>
+<tr>
+<td>dict</td>
+<td>{'a':1, 'b':2, 'c':3}</td>
+<td>Unordered (key,value) mapping</td>
+</tr>
+<tr>
+<td>set</td>
+<td>{1, 2, 3}</td>
+<td>Unordered collection of unique values</td>
+</tr>
+<tr>
+<td>tuple</td>
+<td>(1, 2, 3)</td>
+<td>Immutable ordered collection</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Lists:">Lists:<a class="anchor-link" href="#Lists:">&#182;</a></h3><ul>
+<li>Define with brackets: <code>L = [3, 1, 4, 15, 9]</code></li>
 </ul>
 
 </div>
@@ -13241,8 +13312,47 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>That last feature is a bummer. <strong>There must be a better way!</strong></p>
-<p><img src="https://media.giphy.com/media/xsATxBQfeKHCg/giphy.gif" alt=""></p>
+<ul>
+<li>"Zero indexed": <code>L[0]</code> returns 3,  <code>L[1]</code> returns 1</li>
+</ul>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Can access from the end: <code>L[-1]</code> returns 9,  <code>L[-2]</code> returns 15</li>
+</ul>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Lots of built in functions: len, sort, reversed, max, min, sum, count, append, extend,...<ul>
+<li>Prof demo: Show the py reference in Jlab, search for "data structures"</li>
+<li>Prof demo: Find this outside JLab</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Can access "slices": <code>L[&lt;start at index&gt; : &lt;go till index&gt;]</code><ul>
+<li><code>L[0:3]</code> and <code>L[:3]</code> return <code>[3,1,4]</code></li>
+<li><code>L[-3]</code> returns <code>[4,15,9]</code></li>
+</ul>
+</li>
+</ul>
 
 </div>
 </div>
@@ -13250,235 +13360,18 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="https://media.giphy.com/media/zvYnqgajTM6MU/giphy.gif" alt=""></p>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="https://media.giphy.com/media/3oEduNF7DlpxgcHVJe/giphy.gif" alt=""></p>
-<p>Put that in the Guggenheim.</p>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="https://media.giphy.com/media/B4fRSZgj8XUOY/source.gif" alt=""></p>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Enter notebook files!</p>
-<ul>
-<li><code>.ipynb</code> ("notebook") files mix python code with formatted markdown text and the output from code!</li>
-<li>&rarr; better analysis! ("reproducible, reusable, and shareable")</li>
-</ul>
-<p>And <strong>Jupyter Lab</strong> is how we will make our Jupyter notebooks</p>
-
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="A-quick-tour-of-Jupyter-Lab">A quick tour of Jupyter Lab<a class="anchor-link" href="#A-quick-tour-of-Jupyter-Lab">&#182;</a></h2><p>Open Jupyter Lab:</p>
-<ul>
-<li>Windows: Open Anaconda Prompt and type <code>jupyter lab</code> and hit enter</li>
-<li>Mac: Open a terminal window and type <code>jupyter lab</code> and hit enter</li>
-</ul>
-<p>OK, what are we looking at?</p>
-<ul>
-<li>This is a browser based editor</li>
-<li>Notice your prompt/terminal is running in the background<ul>
-<li><em>HINT</em> : If you need another prompt/terminal to do something else, just open a second one</li>
-</ul>
-</li>
-</ul>
-<p><strong>Now, let me give you a little tour (just watch me!)</strong></p>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>I'll cover...</p>
-<ul>
-<li>The left sidebar<ul>
-<li><strong>The file browser:</strong> Navigating to my project folder</li>
-<li>Kernels: A list of running code</li>
-<li>Commands: Has a lot of actions, and short cuts are listed</li>
-<li>Extensions: VERY useful to make JLab more powerful </li>
-</ul>
-</li>
-<li>The main work area <ul>
-<li>you arrange documents (notebooks, text files, etc.) and other activities (terminals, code consoles, etc.) into panels </li>
-<li>each panel can have many tabs open </li>
-</ul>
-</li>
-</ul>
-
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Our-first-notebook-file">Our first notebook file<a class="anchor-link" href="#Our-first-notebook-file">&#182;</a></h2><p><strong>But first!</strong> Let's put <a href="https://ledatascifi.github.io/ledatascifi-2021/content/assignments/howto_do.html#working-on-assignments-projects-taking-notes">tips on working</a> into practice:</p>
-<ul>
-<li>Open github desktop</li>
-<li>"Fetch" your class notes repo (probably nothing changed, but its a good habit!)</li>
-</ul>
-<p><strong>Now we are ready to code!</strong></p>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Before each class starts, you should have already</p>
-<ul>
-<li>"fetched" your class notes repo </li>
-<li>opened JLab to that folder</li>
-</ul>
-<p>And at the end of each class,</p>
-<ul>
-<li>save all open code files, </li>
-<li>close JLab (and the terminal running it)</li>
-<li>commit and push your Class Notes repo</li>
-</ul>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Enough-already,-let's-&quot;code&quot;!">Enough already, let's "code"!<a class="anchor-link" href="#Enough-already,-let's-&quot;code&quot;!">&#182;</a></h3><h4 id="Step-1:-Create-the-file">Step 1: Create the file<a class="anchor-link" href="#Step-1:-Create-the-file">&#182;</a></h4><ol>
-<li><p>create a folder inside your class notes folder called notes</p>
-<p>right click in file explorer pane and select "New Folder", then name it "notes"</p>
-</li>
-<li><p>create a "" file</p>
-<p>Hit  the $+$ button, then under "Notebook", click on "Python 3"</p>
-</li>
-<li><p>rename that file "Using JupyterLab-Basics"</p>
-<p>right click the file in the file browser, or the tab the file opened in, and pick "rename"</p>
-</li>
-<li><p>save it (CTRL+S on windows, Apple+S on mac)</p>
-</li>
-</ol>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Step-2:-Modifying-our-notebook">Step 2: Modifying our notebook<a class="anchor-link" href="#Step-2:-Modifying-our-notebook">&#182;</a></h4><p>Let's type some Python in the notebook:</p>
-
-<pre><code>L=[1,2,3,4,5] # define a list with 1-5
-L.pop(4)      # "pop" removes an element
-L             # if the last element of a cell is an object
-              # executing the cell will print it, like this:</code></pre>
-<ul>
-<li>Do you notice the syntax coloring?</li>
-<li>The hashtags/pound signs are the "comment signal". They tell Python to ignore everything to the right of it on that line, so that you can write notes to anyone looking at the code.</li>
-</ul>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Ok, let's run that code! Hit <kbd> ctrl </kbd>+ <kbd> enter</kbd></p>
-<p>Do you see the number to the left of it? That helps you track the order in which each cell was run.</p>
-<p>Hit <kbd> ctrl </kbd>+ <kbd> enter</kbd>  again. See the number change?</p>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Stop!-Let-me-show-you-something-important!">Stop! Let me show you something important!<a class="anchor-link" href="#Stop!-Let-me-show-you-something-important!">&#182;</a></h2><p><strong>The point of code is that someone can open the file, run it from beginning to end, and get the same results you did!</strong></p>
-<p>You should check that your files work like you think they do every 15-30 minutes and EVERY TIME you think you are done by</p>
+<p>Now, let's all define this vector: <code>L=[8, 5, 6, 3, 7]</code>.</p>
+<p><strong>TRY, PAIR, SHARE: Write code that does the following. Discuss with the person next to you as needed:</strong></p>
 <ol>
-<li>Clicking the "Kernel" menu, then, "Restart Kernel and clear all outputs". </li>
-<li>Then rerun the code: Open the "run" menu, then "run all cells"</li>
-</ol>
-<p>Let me show you an example of why this is important:</p>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Let me show you an example of why this is important:</p>
-
-<pre><code>a=2                                     # run first
-print("Coffee costs",a+3,"dollars")     # run second, run fourth
-a=4                                     # run third
-# someone opens this file of yours and sees that it says coffee is $7
-# after running these, the code says coffee is only $5!!!
-# this is a disaster!</code></pre>
-<p>This example seems silly, but I saw it on 20-30% of assignments for the first month last year.</p>
-<p>The easiest way to see if this might happen: Just look at all the #s to the left of code blocks. They should be in order from 1 up.</p>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Back-to-using-Jupyter-Lab">Back to using Jupyter Lab<a class="anchor-link" href="#Back-to-using-Jupyter-Lab">&#182;</a></h3><ol>
-<li>Add a new cell below by <em><strong>clicking</strong></em> the plus button on this panel.</li>
-<li>Add a new cell below by <em><strong>keyboard shortcut</strong></em>. To do that, we need a quick digression on Jupyter's modal editing system. Let's look at the textbook.</li>
-</ol>
-<p>The modal behavior of the Jupyter notebook is a little tricky at first but very efficient when you get used to it.</p>
-<p>So, click <kbd> ESC </kbd> to switch to command mode, then <kbd> B </kbd> to insert a cell <strong>B</strong> elow.</p>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ol start="3">
-  <li>Switch the inserted cell to markdown (via the markdown/code drop down box) and write several lines.</li>
-  <li>Split the markdown cell in half and insert a cell in the middle of those halves. </li>
-     <ul>
-         <li><s>How do you split a cell in half?</s> Better question: Where do you look for an answer about how to do that? </li>
-         <li><b>This is a good time to explore!</b> Take the "user interface tour" under help, then look through the various menus, check out the Keyboard Shortcuts (under the help menu), and then search through the "command palette" (which looks like a keyboard icon at the right side of the Notebook Toolbar). <b>The command palette is very useful because you can search for commands!</b> Return to the shortcut menu and command palette often!!!</li>
-    </ul>     
- </ol>
-  <ol start="5">
-  <li>Switch that middle cell to "code" mode via keyboard shortcuts. </li>
-  <li>Add a cell at the bottom of the notebook, and then delete it: <code>ESC</code> to go to command mode and then <code>D</code>,<code>D</code> (hit the "d" button twice).</li>    
-</ol>
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="FIN-for-that-walkthrough">FIN for that walkthrough<a class="anchor-link" href="#FIN-for-that-walkthrough">&#182;</a></h2><ol>
-<li>How did we do? <ul>
-<li>Thumb up emoji if you kept up all the way through</li>
-<li>Thumb down if you're quite lost</li>
-<li>Any other emoji for "in the middle"</li>
-</ul>
-</li>
-<li>Obviously, we will learn much more going forward, but you have enough to play around with Jupyter now. I <strong>highly</strong> recommend doing some introductory Python tutorials over the weekend. The </li>
+<li>Returns the length.</li>
+<li>Returns the largest element.</li>
+<li>Returns the smallest element.</li>
+<li>Returns the total of the vector.</li>
+<li>Returns the first element. See <a href="https://stackoverflow.com/questions/509211/understanding-slice-notation?rq=1">this awesome answer</a> to learn about "slicing" lists in Python. If that link is dead: <a href="https://stackoverflow.com/questions/509211/understanding-slice-notation?rq=1">https://stackoverflow.com/questions/509211/understanding-slice-notation?rq=1</a> </li>
+<li>Returns the last element.</li>
+<li>Returns the first 2 elements.</li>
+<li>Returns the last 2 elements.</li>
+<li>Returns the odd numbered elements (i.e. [8,6,7].</li>
 </ol>
 
 </div>
@@ -13487,19 +13380,170 @@ a=4                                     # run third
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Tidying-up">Tidying up<a class="anchor-link" href="#Tidying-up">&#182;</a></h2><p>Earlier, I said to</p>
+<h2 id="Guided-discussion-+-practice">Guided discussion + practice<a class="anchor-link" href="#Guided-discussion-+-practice">&#182;</a></h2><p>We will run parts of the textbook file in our open notes file.</p>
+<ol>
+<li>Arithmetic --&gt; 1 practice prob</li>
+<li>Logic/booleans <ul>
+<li>booleans, operators: comparison, logic, membership</li>
+<li>for now: don't use <code>is</code> or <code>is not</code>! (let's make a cell for "warnings")</li>
+<li>complex logic gates</li>
+</ul>
+</li>
+<li>Key lessons: Naming objects, <code>&lt;TAB&gt;</code> and <code>&lt;SHIFT&gt;+&lt;TAB&gt;</code>, pointers, Objects, </li>
+<li>Data structures --&gt; try, pair (3 people/room), share</li>
+<li><strong>Flow control syntax and thoughts: for loop (next slides), indentation, if-elif-else</strong></li>
+</ol>
 
-<pre><code>Code must run from beginning to end and produce the same thing every time
-- Restart the kernal and clear output
-- Run all cells
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">stonks</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;GME&#39;</span><span class="p">,</span><span class="s1">&#39;AMC&#39;</span><span class="p">,</span><span class="s1">&#39;BB&#39;</span><span class="p">,</span><span class="s1">&#39;Bankrupt!&#39;</span><span class="p">]</span>
 
-And at the end of each class, 
-- save all open code files, 
-- close JLab (and the terminal running it)
-- commit and push your Class Notes repo
+<span class="c1"># syntax: for &lt;element&gt; in &lt;iterable&gt;:        </span>
+<span class="c1"># you must include the colon. </span>
+<span class="c1"># everything in the for loop must be indented</span>
+<span class="c1"># name the element something that makes sense (not generic!)!</span>
 
-</code></pre>
-<p>Let's do that now!</p>
+<span class="k">for</span> <span class="n">stonk</span> <span class="ow">in</span> <span class="n">stonks</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">stonk</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span>    <span class="nb">print</span><span class="p">(</span><span class="n">stonk</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div></div></section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># two common for-loop devices: </span>
+<span class="c1"># 1. looping over a range</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">7</span><span class="p">):</span>
+    <span class="nb">print</span> <span class="n">i</span>
+    
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># incrementing some calculation</span>
+<span class="n">mynumbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">8</span><span class="p">]</span>
+<span class="n">tot</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="n">mynumbers</span><span class="p">:</span>
+    <span class="n">tot</span> <span class="o">=</span> <span class="n">tot</span> <span class="o">+</span> <span class="n">num</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">tot</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Doesn't that seem silly?</p>
+<p>Q1: Isn't there a quicker way to compute that?</p>
+<p>Q2: Then why is that a useful construct? (answer on next slide)</p>
+
+</div>
+</div>
+</div></div></section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">tot</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">stonk</span> <span class="ow">in</span> <span class="n">stonks</span><span class="p">:</span>
+    <span class="n">price</span> <span class="o">=</span> <span class="n">get_price_of</span><span class="p">(</span><span class="n">stonk</span><span class="p">)</span> <span class="c1"># do some intermediate steps</span>
+    <span class="n">tot</span> <span class="o">=</span> <span class="n">tot</span> <span class="o">+</span> <span class="n">price</span>           <span class="c1"># then increment!</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered celltag_popout"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="PYTHON-AND-INDENTATION">PYTHON AND INDENTATION<a class="anchor-link" href="#PYTHON-AND-INDENTATION">&#182;</a></h2><ul>
+<li>Python has strong opinions about indentations</li>
+<li>Indentations at the beginning of lines are not "up to you"</li>
+<li><strong>Indentations indicate a "block" of code that is run as a unit.</strong> (like the for loops above)</li>
+</ul>
+<p>Example on next slide, prof demo.</p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing code_cell rendered celltag_popout">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">7</span>
+<span class="k">if</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">:</span>       <span class="c1"># this is false, obviously,</span>
+    <span class="n">z</span> <span class="o">=</span> <span class="n">x</span><span class="o">+</span><span class="mi">2</span>        <span class="c1"># so this never runs and </span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;I am not here.&#39;</span><span class="p">)</span> <span class="c1"># this doesn&#39;t print</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;starting new block&#39;</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">:</span>       <span class="c1"># this is false, obviously,</span>
+    <span class="n">z</span> <span class="o">=</span> <span class="n">x</span><span class="o">+</span><span class="mi">2</span>        <span class="c1"># so this never runs and </span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;I am here&#39;</span><span class="p">)</span> <span class="c1"># this does print</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="If,-elif,-else">If, elif, else<a class="anchor-link" href="#If,-elif,-else">&#182;</a></h3><p>Syntax:</p>
+<div class="highlight"><pre><span></span><span class="k">if</span> <span class="o">&lt;</span><span class="n">condition</span> <span class="c1">#1&gt;:                         # you must use the colon!</span>
+     <span class="o">&lt;</span><span class="n">do</span> <span class="n">some</span> <span class="n">stuff</span> <span class="k">if</span> <span class="n">condition</span> <span class="ow">is</span> <span class="n">true</span><span class="o">&gt;</span>
+<span class="k">elif</span> <span class="o">&lt;</span><span class="n">condition</span> <span class="c1">#2&gt;:                       # as in &quot;Else-If&quot;</span>
+    <span class="o">&lt;</span><span class="k">if</span> <span class="n">condition</span> <span class="c1">#1 is false, and </span>
+    <span class="n">condition</span> <span class="c1">#2 is true, run this block&gt;</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="o">&lt;</span><span class="k">if</span> <span class="n">neither</span> <span class="c1">#1 or #2 are true, do this&gt;</span>
+</pre></div>
+<p>Comments:</p>
+<ul>
+<li>You can include zero or as many <code>elif</code> code blocks as you want</li>
+<li>You can omit the <code>else</code> block entirely</li>
+<li>Whatever is in <code>&lt;condition&gt;</code> must evaluate to True or False or 1 or 0</li>
+<li>See the <strong>"Logic and comparisons"</strong> section above on how Python evaluates conditions</li>
+</ul>
 
 </div>
 </div>
@@ -13507,23 +13551,42 @@ And at the end of each class,
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Summary-Part-1">Summary Part 1<a class="anchor-link" href="#Summary-Part-1">&#182;</a></h2><p>Before each class starts, you should have already</p>
-<ul>
-<li>"fetched" your class notes repo </li>
-<li>opened JLab to that folder</li>
+<h3 id="Other-notes-in-the-textbook">Other notes in the textbook<a class="anchor-link" href="#Other-notes-in-the-textbook">&#182;</a></h3><ul>
+<li><code>while</code>: We probably won't use while in this class. </li>
+<li><code>functions</code>: Useful!</li>
+<li>A list of popular packages we will add to our code as the semester proceeds</li>
 </ul>
-<p>And at the end of each class,</p>
+<h3 id="TIPS:">TIPS:<a class="anchor-link" href="#TIPS:">&#182;</a></h3><ol>
+<li><p>For each package we use, note the most common and useful functions, and copy "cookbook" uses of the packages which you can paste into new programs.</p>
+<p>Example: How to open a CSV file</p>
+</li>
+<li><p><em>I do not personally, nor do many programmers, commit to memory many functions of many packages. We simply <strong>know what can be done</strong> and when needed, we search (tab completion/google/stack overflow) for the command/recipe for that function.</em></p>
+</li>
+</ol>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="BREAK!">BREAK!<a class="anchor-link" href="#BREAK!">&#182;</a></h1><p><img src="https://media.giphy.com/media/RiWZUGcZPEKdQgrQ96/source.gif" alt=""></p>
+<p>Now we move on to the second section of class... "debugging"</p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Tips-for-fixing-and-avoiding-errors">Tips for fixing and avoiding errors<a class="anchor-link" href="#Tips-for-fixing-and-avoiding-errors">&#182;</a></h2><p>Computers are extremely powerful but incredibly stupid. We want to both</p>
 <ul>
-<li>save all open code files, </li>
-<li>close JLab (and the terminal running it)</li>
-<li>commit and push your Class Notes repo</li>
-<li>open the GitHub.com version of the repo</li>
+<li>Fix bugs when they happen</li>
+<li>Prevent them from happening!</li>
 </ul>
-<p>Code must run from beginning to end and produce the same thing every time</p>
-<ul>
-<li>Restart the kernal and clear output</li>
-<li>Run all cells</li>
-</ul>
+<p>Bugs can be syntax or other errors that break the code.</p>
+<p>The worst bugs are the type that let your code keep "working". Just lurking there, ruining your work...</p>
+<p><img src="https://media.giphy.com/media/3ov9k9kmfD1b80NJ2o/source.gif" alt=""></p>
 
 </div>
 </div>
@@ -13531,12 +13594,28 @@ And at the end of each class,
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="More-practice:">More practice:<a class="anchor-link" href="#More-practice:">&#182;</a></h3><ol>
-<li>"Issue demo": Have student put issue on their Class Note Repo. I’ll reply via email. </li>
-<li>"Good citizen demo": Have student suggest a typo fix on the website</li>
-<li>Highlight "JupyterLab" chapter elements, and have everyone do the walk through of the interface </li>
-<li>Start everyone's Notes files with "Practice" and Whirlwind #3</li>
-<li>A preview of "simple code"</li>
+<h3 id="To-fix-bugs,-you-need-to">To fix bugs, you need to<a class="anchor-link" href="#To-fix-bugs,-you-need-to">&#182;</a></h3><ol>
+<li>Realize that you have a bug </li>
+<li>Figure out where it is</li>
+<li>Make it repeatable (and you'll understand the bug)</li>
+<li>Fix it (duh) and test it (the existence of the bug should disabuse you of your coding invincibility!)</li>
+</ol>
+<p>1 and 2 are easy with syntax errors - python will tell you.</p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><em><strong>Advice that could save (or cost) you thousands:</strong></em> Those steps are general, and work for other things besides code, like  plumbing and electrical work on your parent's house.</p>
+<ol>
+<li>Read the error codes! Then google them. Then ask your @classmates. <ul>
+<li>REMINDER: the 15 minute rule</li>
+</ul>
+</li>
+<li><code>%debug</code> - <a href="https://jakevdp.github.io/PythonDataScienceHandbook/01.06-errors-and-debugging.html#Debugging:-When-Reading-Tracebacks-Is-Not-Enough">Covered in nice detail here</a>.</li>
+<li>Hunt the bug: Flipping switches / divide and conquer (next slide)</li>
 </ol>
 
 </div>
@@ -13545,38 +13624,157 @@ And at the end of each class,
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Before-next-time">Before next time<a class="anchor-link" href="#Before-next-time">&#182;</a></h2><p><img src="https://media.giphy.com/media/H7x1H0veAJlo4/giphy.gif" alt=""></p>
-<p>Stuck?</p>
-<ul>
-<li><kbd>shift</kbd> + <kbd>tab</kbd>; help(function); find the documentation via google; stack overflow;</li>
-</ul>
-<p>Over the weekend:</p>
-<ul>
-<li>The task page lists reading to cover and coding to try</li>
-<li>I added a Markdown tutorial to the textbook that people like a lot</li>
-<li>On Monday, we will be coding together - more updates on that soon</li>
-</ul>
+<p><img src="https://media.giphy.com/media/dbtDDSvWErdf2/giphy.gif" alt=""></p>
 
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="https://media.giphy.com/media/Oe4V14aLzv7JC/giphy.gif" alt=""></p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>After slaving over your computer and a piece of paper (you smartly planned out your code before you went in head first), you've found a clever solution to your problem. Your code is beautiful and elegant, like this:</p>
+<div class="highlight"><pre><span></span><span class="mi">2</span><span class="o">+</span><span class="mi">2</span> <span class="c1"># imagine this is a bunch of code</span>
+<span class="mi">2</span><span class="o">+</span><span class="mi">2</span> <span class="c1"># imagine this is a bunch of code</span>
+<span class="mi">2</span><span class="o">+</span><span class="mi">2</span> <span class="c1"># imagine this is a bunch of code</span>
+<span class="n">Error</span> <span class="c1"># somewhere in the code is an error. But in real programming you don’t know the error is here!</span>
+<span class="mi">2</span><span class="o">+</span><span class="mi">2</span> <span class="c1"># imagine this is a bunch of code</span>
+<span class="mi">2</span><span class="o">+</span><span class="mi">2</span> <span class="c1"># imagine this is a bunch of code</span>
+</pre></div>
+<p>Let's turn parts of your code off:</p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>You can just comment out parts of the code</p>
+<div class="highlight"><pre><span></span><span class="mi">2</span><span class="o">+</span><span class="mi">2</span> <span class="c1"># imagine this is a bunch of code</span>
+<span class="mi">2</span><span class="o">+</span><span class="mi">2</span> <span class="c1"># imagine this is a bunch of code</span>
+<span class="c1"># 2+2 # imagine this is a bunch of code</span>
+<span class="c1"># Error # somewhere in the code is an error. But in real programming you don’t know the error is here!</span>
+<span class="c1"># 2+2 # imagine this is a bunch of code</span>
+<span class="c1"># 2+2 # imagine this is a bunch of code</span>
+</pre></div>
+<p>Well, this would work, so you know the error is in the lines you hid.</p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="But-what-about-the-bugs-that-let-your-code-keep-&quot;working&quot;?">But what about the bugs that let your code keep "working"?<a class="anchor-link" href="#But-what-about-the-bugs-that-let-your-code-keep-&quot;working&quot;?">&#182;</a></h1>
 </div>
 </div>
 </div><div class="fragment">
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Two-great-opportunities:">Two great opportunities:<a class="anchor-link" href="#Two-great-opportunities:">&#182;</a></h3><ol>
-<li>J&amp;J competition (see coursesite)</li>
-<li>FIN388 - small capstone team looking for teammates. &#11088; &#11088;<ul>
-<li>Will spend semester developing fun, real-world FinTech project for a firm. </li>
-<li>Project focuses on credit score products, will have data science component, and examine relevant regulatory factors</li>
-<li>Must have taken FIN330</li>
-<li>Let me know ASAP!</li>
+<p>These are usually often due to either</p>
+<ul>
+<li>planning errors (you thought you could do A-&gt;B-&gt;C, but C is impossible after B)</li>
+<li><strong>Or because you did something that didn't do exactly what you thought</strong></li>
 </ul>
-</li>
+<p>The latter happens a TON with big data projects, and we will talk about techniques to reduce such errors.</p>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>But I have <strong>ONE BIG, WEIRD TRICK</strong> and let me tell, you, BUGS HATE IT:</p>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Look-at-your-data-and-objects-OFTEN!-Print,-print,-print!">Look at your data and objects OFTEN! Print, print, print!<a class="anchor-link" href="#Look-at-your-data-and-objects-OFTEN!-Print,-print,-print!">&#182;</a></h1>
+</div>
+</div>
+</div></div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Seriously...</p>
+<h1 id="Look-at-your-data-and-objects-OFTEN!-Print,-print,-print!">Look at your data and objects OFTEN! Print, print, print!<a class="anchor-link" href="#Look-at-your-data-and-objects-OFTEN!-Print,-print,-print!">&#182;</a></h1><p>This isn't even a "debugging" point per se.</p>
+<ul>
+<li>You know a 6 is a 6.</li>
+<li>In big datasets, it's easy to make rather large changes without knowing exactly what you have done, ... or not done ... , if you don't see into the object. </li>
+<li>Are you sure that object is exactly what you think it is, containing exactly what you think it does? Thus, the <code>print</code> statement and other ways of "glancing into" datasets are crucial. Even when you've all become pythonic pros, you should tend towards examining your objects "too much". </li>
+</ul>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered celltag_popout"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Options to look at datasets:</p>
+<ol>
+<li>Print parts of it in Jupyter, along with many summary stats. </li>
+<li>Output to a csv file and open in Excel.</li>
+<li>Use the <code>spyder</code> program that came with Anaconda. </li>
+<li>There is a "variable" explorer extension for JLab that lets you click and see objects. </li>
 </ol>
 
 </div>
 </div>
-</div></div></section></section>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Are-you-still-stuck?">Are you still stuck?<a class="anchor-link" href="#Are-you-still-stuck?">&#182;</a></h2><p>It'll happen! We will try to build some ambitious code this semester!</p>
+<p>So if you've tried the above, what can you do?</p>
+<ul>
+<li>Writing smart code will save us from getting into intractable problems. More on that next class. </li>
+<li>Again, see the resources tab of our website!</li>
+<li>Finally, the resources tab also suggests that clearing your head and <a href="https://media.giphy.com/media/h6cFYO8miNhok/giphy.gif">getting a mental break might be a good idea</a>.</li>
+</ul>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Summary">Summary<a class="anchor-link" href="#Summary">&#182;</a></h2><ul>
+<li>We covered some basic python coding together today. Going forward, it's headfirst into the breach. (?)</li>
+<li>You can figure out syntax issues, but use the 15 minute rule</li>
+<li>Get exposure to possible functions and algorithms to solve different problems via the resources and youtube videos</li>
+<li>LOOK AT YOUR DATA AND OBJECTS A LOT!</li>
+</ul>
+<p><img src="https://media.giphy.com/media/H7x1H0veAJlo4/giphy.gif" alt=""></p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Shutting-down">Shutting down<a class="anchor-link" href="#Shutting-down">&#182;</a></h2><p>And at the end of each class,</p>
+<ul>
+<li>Restart your kernal and rerun your code</li>
+<li>save all open code files, </li>
+<li>close JLab (and the terminal running it)</li>
+<li>commit and push your Class Notes repo</li>
+<li>open the GitHub.com version of the repo</li>
+</ul>
+
+</div>
+</div>
+</div></section></section>
 </div>
 </div>
 
