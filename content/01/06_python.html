@@ -160,7 +160,7 @@
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../assignments/howto_review.html">
-   How to do peer review
+   How to do your peer reviews
   </a>
  </li>
 </ul>
@@ -628,8 +628,7 @@
 <p>Examples:</p>
 <ul class="simple">
 <li><p>Above, the object <code class="docutils literal notranslate"><span class="pre">x</span></code> has the type attribute of <code class="docutils literal notranslate"><span class="pre">list</span></code>, and lists have a “method” called <code class="docutils literal notranslate"><span class="pre">append</span></code>.</p></li>
-<li><p><span class="xref myst">In the simple program</span>, we imported a package: <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">seaborn</span> <span class="pre">as</span> <span class="pre">sns</span></code>. Now, the “package” <code class="docutils literal notranslate"><span class="pre">seaborn</span></code> is actually an “object” (which we call <code class="docutils literal notranslate"><span class="pre">sns</span></code> for convenience). That object - like any object - has “method” functions. In that code, for example, I called <code class="docutils literal notranslate"><span class="pre">sns.lineplot(data=cumrets)</span></code> to plot a line.</p></li>
-<li><p><em>Note: I actually called <code class="docutils literal notranslate"><span class="pre">sns.lineplot(data=cumrets).set_title(&quot;Returns,</span> <span class="pre">ex-dividends&quot;)</span></code>. In this, python evaluated <code class="docutils literal notranslate"><span class="pre">sns.lineplot(data=cumrets)</span></code>, which is itself an object (the plot), which in turn has additional methods. So I was able to “chain” that with <code class="docutils literal notranslate"><span class="pre">.set_title(&quot;Returns,</span> <span class="pre">ex-dividends&quot;)</span></code> to add the title.</em></p></li>
+<li><p><span class="xref myst">In the stock prices program we show during the lectures</span>, we imported a package: <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">pandas_datareader</span> <span class="pre">as</span> <span class="pre">pdr</span></code>. Now, the “package” <code class="docutils literal notranslate"><span class="pre">pandas_datareader</span></code> is actually an “object” (which we call <code class="docutils literal notranslate"><span class="pre">pdr</span></code> for convenience). That object - like any object - has “method” functions. In that code, for example, I called <code class="docutils literal notranslate"><span class="pre">pdr.get_data_yahoo(stocks)</span></code> to download stock prices.</p></li>
 <li><p>Seriously, EVERYTHING is an object.</p>
 <ul>
 <li><p>Lists are objects (duh)</p></li>
@@ -678,7 +677,7 @@ False
 <h3><span class="section-number">1.6.2.8. </span>Built in data structures<a class="headerlink" href="#built-in-data-structures" title="Permalink to this headline">¶</a></h3>
 <p>Python has <code class="docutils literal notranslate"><span class="pre">list</span></code>, <code class="docutils literal notranslate"><span class="pre">tuple</span></code>, <code class="docutils literal notranslate"><span class="pre">dict</span></code>, and <code class="docutils literal notranslate"><span class="pre">set</span></code>. Beginners typically rely on lists extensively, but as you progress, you will find that all four are extremely useful, because their unique traits solve different needs.</p>
 <p><a class="reference external" href="https://nbviewer.jupyter.org/github/jakevdp/WhirlwindTourOfPython/blob/master/06-Built-in-Data-Structures.ipynb">After class, you should absolutely read this</a> and as you do, try the examples, and throw them into your growing personal cheat sheet.</p>
-<p>First, let me illustrate the use of <code class="docutils literal notranslate"><span class="pre">.extend()</span></code> vs <code class="docutils literal notranslate"><span class="pre">.append()</span></code> vs <code class="docutils literal notranslate"><span class="pre">+</span></code> for strings:</p>
+<p>First, let me illustrate the use of <code class="docutils literal notranslate"><span class="pre">.extend()</span></code> vs <code class="docutils literal notranslate"><span class="pre">.append()</span></code> vs <code class="docutils literal notranslate"><span class="pre">+</span></code> for lists:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">L</span><span class="o">=</span><span class="p">[</span><span class="mi">8</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">7</span><span class="p">]</span>
@@ -699,7 +698,7 @@ False
 </div>
 </div>
 <p>Now, let’s all define this vector: <code class="docutils literal notranslate"><span class="pre">L=[8,</span> <span class="pre">5,</span> <span class="pre">6,</span> <span class="pre">3,</span> <span class="pre">7]</span></code>.</p>
-<p><strong>TRY, PAIR, SHARE: Write code that does the following. Discuss with the person next to you as needed:</strong></p>
+<p><strong>Exercises: Write code that does the following:</strong></p>
 <ol class="simple">
 <li><p>Returns the length.</p></li>
 <li><p>Returns the largest element.</p></li>
@@ -875,17 +874,17 @@ I am here
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">a</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">b</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
     <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    The first argument you give goes to x, the second to a, the third to b.</span>
-<span class="sd">    If you do no provide a or b, they default to the value 1.</span>
+<span class="sd">    If you do not provide a or b, they default to the value 1.</span>
 <span class="sd">    &#39;&#39;&#39;</span>
     <span class="k">if</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
         <span class="k">return</span> <span class="s2">&quot;WHOA THIS IS NEGATIVE&quot;</span>
     <span class="k">return</span> <span class="p">[</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span> <span class="o">*</span> <span class="n">x</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span> <span class="c1"># you can return any object(s) you want! this is a list, for example</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="o">-</span><span class="mi">100</span><span class="p">))</span> <span class="c1">#notice it never gets to a+b*x</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">b</span><span class="o">=</span><span class="mi">3</span><span class="p">))</span>
-<span class="n">help</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="o">-</span><span class="mi">100</span><span class="p">))</span>    <span class="c1"># notice it never gets to a+b*x</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">))</span>   
+<span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>       <span class="c1"># uses the default value of a and b</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">b</span><span class="o">=</span><span class="mi">3</span><span class="p">))</span>   <span class="c1"># uses the default value of a</span>
+<span class="n">help</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>           <span class="c1"># the docstring is useful!</span>
 </pre></div>
 </div>
 </div>
