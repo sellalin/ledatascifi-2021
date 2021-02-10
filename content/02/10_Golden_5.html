@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>A “Simple Program” &#8212; LeDataSciFi-2021</title>
+    <title>2.4. When to write functions &#8212; LeDataSciFi-2021</title>
     
   <link rel="stylesheet" href="../../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
@@ -57,6 +57,8 @@
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="2.5. Applying the golden rules to our bda project folder" href="10_Golden_6.html" />
+    <link rel="prev" title="2.3. Good Data is Normalized" href="10_Golden_4.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -167,50 +169,94 @@
   Textbook
  </span>
 </p>
-<ul class="nav sidenav_l1">
+<ul class="current nav sidenav_l1">
  <li class="toctree-l1 collapsible-parent">
-  <a class="reference internal" href="00_Getting_Started.html">
+  <a class="reference internal" href="../01/00_Getting_Started.html">
    1. Motivation and Getting Started
   </a>
   <ul class="collapse-ul">
    <li class="toctree-l2">
-    <a class="reference internal" href="01_Motivation.html">
+    <a class="reference internal" href="../01/01_Motivation.html">
      1.1. Motivation
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="02_Setup.html">
+    <a class="reference internal" href="../01/02_Setup.html">
      1.2. Set up
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="03_github.html">
+    <a class="reference internal" href="../01/03_github.html">
      1.3. Github Basics
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="04_Markdown.html">
+    <a class="reference internal" href="../01/04_Markdown.html">
      1.4. Markdown basics
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="05_jupyterlab.html">
+    <a class="reference internal" href="../01/05_jupyterlab.html">
      1.5. Jupyter Lab Basics
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="06_python.html">
+    <a class="reference internal" href="../01/06_python.html">
      1.6. Python Basics
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="07_debugging.html">
+    <a class="reference internal" href="../01/07_debugging.html">
      1.7. Debugging
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="08_libraries.html">
+    <a class="reference internal" href="../01/08_libraries.html">
      1.8. Installing libraries
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../01/09_gitignore.html">
+     1.9. Gitignore Files
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 current active collapsible-parent">
+  <a class="reference internal" href="10_Golden_1.html">
+   2. Good Analysis Practices
+  </a>
+  <ul class="current collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="10_Golden_2.html">
+     2.1. A case study of bad research
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="10_Golden_3.html">
+     2.2. The golden rules
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="10_Golden_4.html">
+     2.3. Good data
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     2.4. When to write functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="10_Golden_6.html">
+     2.5. Reorganizing the bad research folder
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="10_Golden_7.html">
+     2.6. Filepaths
     </a>
    </li>
   </ul>
@@ -253,7 +299,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../../_sources/content/01/old_practice.ipynb"><button type="button"
+        <a class="dropdown-buttons" href="../../_sources/content/02/10_Golden_5.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
@@ -273,10 +319,10 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/LeDataSciFi/ledatascifi-2021/issues/new?title=Issue%20on%20page%20%2Fcontent/01/old_practice.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/LeDataSciFi/ledatascifi-2021/issues/new?title=Issue%20on%20page%20%2Fcontent/02/10_Golden_5.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/LeDataSciFi/ledatascifi-2021/edit/main/content/01/old_practice.ipynb"><button
+        <a class="edit-button" href="https://github.com/LeDataSciFi/ledatascifi-2021/edit/main/content/02/10_Golden_5.ipynb"><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
     </div>
@@ -296,7 +342,7 @@
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://mybinder.org/v2/gh/LeDataSciFi/ledatascifi-2021/main?urlpath=lab/tree/content/01/old_practice.ipynb"><button type="button"
+        <a class="binder-button" href="https://mybinder.org/v2/gh/LeDataSciFi/ledatascifi-2021/main?urlpath=lab/tree/content/02/10_Golden_5.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="../../_static/images/logo_binder.svg"
@@ -304,7 +350,7 @@
         
         
         
-        <a class="colab-button" href="https://colab.research.google.com/github/LeDataSciFi/ledatascifi-2021/blob/main/content/01/old_practice.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+        <a class="colab-button" href="https://colab.research.google.com/github/LeDataSciFi/ledatascifi-2021/blob/main/content/02/10_Golden_5.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
                 title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
                     src="../../_static/images/logo_colab.png"
                     alt="Interact on Colab">Colab</button></a>
@@ -318,6 +364,20 @@
     <!-- Table of contents -->
     <div class="d-none d-md-block col-md-2 bd-toc show">
         
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#documentation">
+   2.4.1. Documentation
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
     </div>
 </div>
     <div id="main-content" class="row">
@@ -325,73 +385,58 @@
         
               <div>
                 
-  <div class="section" id="a-simple-program">
-<h1>A “Simple Program”<a class="headerlink" href="#a-simple-program" title="Permalink to this headline">¶</a></h1>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="ch">#!pip install pandas_datareader # uncomment and run this to install pandas data reader</span>
+  <div class="section" id="when-to-write-functions">
+<h1><span class="section-number">2.4. </span>When to write functions<a class="headerlink" href="#when-to-write-functions" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><p>Writing your own functions is important for improving the clarity of your code because it</p>
+<ul class="simple">
+<li><p>separates different strands of logic (<strong>Rule 5.B</strong>)</p></li>
+<li><p>allows you to reuse code (<strong>Rule 5.A</strong>)</p></li>
+<li><p>prevents copy/paste errors (<strong>Rule 5.A</strong>)</p></li>
+</ul>
+</div></blockquote>
+<p>The <a class="reference external" href="https://web.stanford.edu/~gentzkow/research/CodeAndData.xhtml#magicparlabel-1085">“Code and Data” reference</a> has a short but very nice illustration justifying and explaining those rules. Do yourself a favor and read it!</p>
+<p>I’ll simply add that while a “wet jumpshot” is good in basketball, “wet code” is bad. You’ve Wasted Everyone’s Time by Writing Everything Twice, which is bad even though We Enjoy Typing.</p>
+<p>Nah, you want your code to be DRY.</p>
+<p>It’s very simple: Don’t Repeat Yourself.</p>
+<p>A few more points:</p>
+<ul class="simple">
+<li><p>Don’t abstract for the sake of it! Writing functions can be a time-consuming waste of time that eats up time. (Lots of redundancy in that sentence was a waste of time to the reader, but at least it was short. Similarly, bad code is less problematic when it is short.)</p></li>
+<li><p><strong>Rule 5.E:</strong> A magic number is a literal number embedded in your code. “Magic number” is a pejorative. Having numbers that act as in-line inputs and parameters can lead to errors and make modifying code very tough. For example, in <span class="xref myst">a simple program</span>, I wrote <code class="docutils literal notranslate"><span class="pre">2006</span></code> and <code class="docutils literal notranslate"><span class="pre">['AAPL','MSFT','VZ']</span></code> several times throughout the code. This is bad practice!</p></li>
+<li><p><strong>Rule 5.D:</strong> If you are going to reuse your code, write a “unit test”, which is a script that tests out the behavior of the function you’ve written to make sure it works as intended. It should run your function with a few different inputs, possibly inputs with deliberate errors, test the function’s output against <em><strong>answer you know in advance are correct</strong></em>. Using “toy” or “small” datasets is essential to developing functions and code more broadly.</p>
+<ul>
+<li><p>Corollary: Don’t unit test for the sake of it. You don’t need to check what <code class="docutils literal notranslate"><span class="pre">round_a_number()</span></code> does when you use a string as input.</p></li>
+</ul>
+</li>
+<li><p><strong>On “classes”:</strong> I don’t personally use classes much, if at all. It wasn’t necessary or extremely beneficial for my early projects (or so I, uniformed!, thought), so I didn’t use them and learn them. Then inertia took over… But defining your own classes can be extremely useful! If you want to use them when warranted during this semester, absolutely go for it. I recommend reading the Whirlwind of Python section as a starter.</p></li>
+</ul>
+<div class="section" id="documentation">
+<h2><span class="section-number">2.4.1. </span>Documentation<a class="headerlink" href="#documentation" title="Permalink to this headline">¶</a></h2>
+<p>This is maybe ok, but probably bad:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Elasticity = Percent Change in Quantity / Percent Change in Price</span>
+<span class="c1"># Elasticity = 0.4 / 0.2 = 2</span>
+<span class="c1"># See Shapiro (2005), The Economics of Potato Chips,</span>
+<span class="c1"># Harvard University Mimeo, Table 2A.</span>
+<span class="n">compute_welfare_loss</span><span class="p">(</span><span class="n">elasticity</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="cell tag_remove_output docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">pandas_datareader</span> <span class="k">as</span> <span class="nn">pdr</span> <span class="c1"># you might need to install this (see above)</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
-<span class="kn">import</span> <span class="nn">statsmodels.api</span> <span class="k">as</span> <span class="nn">sm</span>
-<span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
-
-<span class="c1"># don&#39;t copy and paste these lists and number in several places </span>
-<span class="c1"># (which is what the original &quot;simple program&quot; did... that&#39;s bad programming!)</span>
-<span class="c1"># instead, create a var - if we change it here, it changes everywhere</span>
-<span class="n">stocks</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;GME&#39;</span><span class="p">,</span><span class="s1">&#39;AMC&#39;</span><span class="p">,</span><span class="s1">&#39;BB&#39;</span><span class="p">]</span>
-<span class="n">start_yr</span> <span class="o">=</span> <span class="n">datetime</span><span class="p">(</span><span class="mi">2021</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
-
-<span class="c1"># load</span>
-<span class="n">stock_prices</span> <span class="o">=</span> <span class="n">pdr</span><span class="o">.</span><span class="n">get_data_yahoo</span><span class="p">(</span><span class="n">stocks</span><span class="p">,</span> <span class="n">start</span><span class="o">=</span><span class="n">start_yr</span><span class="p">)</span>
-<span class="n">stock_prices</span> <span class="o">=</span> <span class="n">stock_prices</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">like</span><span class="o">=</span><span class="s1">&#39;Adj Close&#39;</span><span class="p">)</span> <span class="c1"># reduce to just columns with this in the name</span>
-<span class="n">stock_prices</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="n">stocks</span> <span class="c1"># put their tickers as column names</span>
-<span class="n">stock_prices</span> <span class="c1"># print</span>
+<p><strong>The problem with comments is that if you change the code, you don’t have to change the comments and the code will still run.</strong> E.g., if you change <code class="docutils literal notranslate"><span class="pre">elasticity=2</span></code> above, you might easily forget to change the comment associated with it, or explain why.</p>
+<p>So using comments makes it possible that your code becomes internally inconsistent! The next example prevents that, yet still documents the code just as well because it is <strong>self-documenting</strong>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># See Shapiro (2005), The Economics of Potato Chips,</span>
+<span class="c1"># Harvard University Mimeo, Table 2A.</span>
+<span class="n">percent_change_in_quantity</span> <span class="o">=</span> <span class="o">-</span><span class="mf">0.4</span>
+<span class="n">percent_change_in_price</span> <span class="o">=</span> <span class="mf">0.2</span>
+<span class="n">elasticity</span> <span class="o">=</span> <span class="n">percent_change_in_quantity</span><span class="o">/</span><span class="n">percent_change_in_price</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="cell tag_remove_output docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># this is wide data... so if we want to create a new variable, we have to do it once for each firm...</span>
-<span class="c1"># what if we have 1000 firms? seems tough to do...</span>
-<span class="c1"># make long/tidy:</span>
-<span class="n">stock_prices</span> <span class="o">=</span> <span class="n">stock_prices</span><span class="o">.</span><span class="n">stack</span><span class="p">()</span><span class="o">.</span><span class="n">swaplevel</span><span class="p">()</span><span class="o">.</span><span class="n">sort_index</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
-<span class="n">stock_prices</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Firm&#39;</span><span class="p">,</span><span class="s1">&#39;Date&#39;</span><span class="p">,</span><span class="s1">&#39;Adj Close&#39;</span><span class="p">]</span>
-<span class="n">stock_prices</span> <span class="c1"># print - now that is formatted nicely, like CRSP! </span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell tag_remove_output docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># add return var.</span>
-<span class="c1"># MAKE SURE YOU CREATE THE VARIABLES WITHIN EACH FIRM - use groupby</span>
-<span class="n">stock_prices</span><span class="p">[</span><span class="s1">&#39;ret&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">stock_prices</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;Firm&#39;</span><span class="p">)[</span><span class="s1">&#39;Adj Close&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">pct_change</span><span class="p">()</span>
-<span class="n">stock_prices</span> <span class="c1"># print - the first ret for each firm should be missing...</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">stock_prices</span>
-     <span class="o">.</span><span class="n">assign</span><span class="p">(</span><span class="n">ret</span><span class="o">=</span><span class="mi">1</span><span class="o">+</span><span class="n">stock_prices</span><span class="o">.</span><span class="n">ret</span><span class="p">)</span>              <span class="c1"># gross returns</span>
-     <span class="o">.</span><span class="n">set_index</span><span class="p">([</span><span class="s1">&#39;Date&#39;</span><span class="p">,</span><span class="s1">&#39;Firm&#39;</span><span class="p">])[</span><span class="s1">&#39;ret&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">unstack</span><span class="p">()</span> <span class="c1"># convert to wide format</span>
-     <span class="o">.</span><span class="n">cumprod</span><span class="p">()</span>
-     <span class="o">.</span><span class="n">plot</span><span class="p">()</span>
-<span class="p">)</span>
-</pre></div>
-</div>
-</div>
+<p>Related points:</p>
+<ul class="simple">
+<li><p>Use the naming of variables and the structure of the code to help guide a reader through your operations</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">x</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code> are usually (but not always!) bad variable names because they are uninformative</p></li>
+<li><p>The aim for self-documentation underlies the logic behind the “Good Data” section, the “Directory” rules, how we name files, …</p></li>
+<li><p>Documentation is sometimes necessary and unavoidable. (Linking to “The Economics of Potato Chips” in the example above  is excessive, the name suffices.)</p></li>
+<li><p>Documentation can clarify that, yes, I <em>did mean to do this on purpose</em></p></li>
+</ul>
 </div>
 </div>
 
@@ -408,7 +453,7 @@
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./content/01"
+            path: "./content/02"
         },
         predefinedOutput: true
     }
@@ -423,6 +468,8 @@
     
     <div class='prev-next-bottom'>
         
+    <a class='left-prev' id="prev-link" href="10_Golden_4.html" title="previous page"><span class="section-number">2.3. </span>Good Data is Normalized</a>
+    <a class='right-next' id="next-link" href="10_Golden_6.html" title="next page"><span class="section-number">2.5. </span>Applying the golden rules to our bda project folder</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">

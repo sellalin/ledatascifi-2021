@@ -213,6 +213,50 @@
      1.8. Installing libraries
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../content/01/09_gitignore.html">
+     1.9. Gitignore Files
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../content/02/10_Golden_1.html">
+   2. Good Analysis Practices
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../content/02/10_Golden_2.html">
+     2.1. A case study of bad research
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../content/02/10_Golden_3.html">
+     2.2. The golden rules
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../content/02/10_Golden_4.html">
+     2.3. Good data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../content/02/10_Golden_5.html">
+     2.4. When to write functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../content/02/10_Golden_6.html">
+     2.5. Reorganizing the bad research folder
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../content/02/10_Golden_7.html">
+     2.6. Filepaths
+    </a>
+   </li>
   </ul>
   <i class="fas fa-chevron-down">
   </i>
@@ -364,17 +408,19 @@
   <a class="reference internal nav-link" href="#id1">
    Guided discussion + practice
   </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#python-and-indentation">
-   PYTHON AND INDENTATION
-  </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h2 nav-item toc-entry">
     <a class="reference internal nav-link" href="#if-elif-else">
      If, elif, else
     </a>
    </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-and-indentation">
+   PYTHON AND INDENTATION
+  </a>
+  <ul class="nav section-nav flex-column">
    <li class="toc-h2 nav-item toc-entry">
     <a class="reference internal nav-link" href="#other-notes-in-the-textbook">
      Other notes in the textbook
@@ -449,7 +495,8 @@
         
               <div>
                 
-  <div class="section" id="hello-everyone-before-class">
+  <p>For classes with mostly new coders, the python section alone will take &gt;75 minutes.</p>
+<div class="section" id="hello-everyone-before-class">
 <h1>Hello everyone! Before class:<a class="headerlink" href="#hello-everyone-before-class" title="Permalink to this headline">¶</a></h1>
 <ol class="simple">
 <li><p>In GH Desktop: Fetch/pull your class notes repo and the lecture repo.</p></li>
@@ -649,6 +696,26 @@
 </div>
 </div>
 </div>
+<div class="section" id="if-elif-else">
+<h2>If, elif, else<a class="headerlink" href="#if-elif-else" title="Permalink to this headline">¶</a></h2>
+<p>Syntax:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="o">&lt;</span><span class="n">condition</span> <span class="c1">#1&gt;:                         # you must use the colon!</span>
+     <span class="o">&lt;</span><span class="n">do</span> <span class="n">some</span> <span class="n">stuff</span> <span class="k">if</span> <span class="n">condition</span> <span class="ow">is</span> <span class="n">true</span><span class="o">&gt;</span>
+<span class="k">elif</span> <span class="o">&lt;</span><span class="n">condition</span> <span class="c1">#2&gt;:                       # as in &quot;Else-If&quot;</span>
+    <span class="o">&lt;</span><span class="k">if</span> <span class="n">condition</span> <span class="c1">#1 is false, and </span>
+    <span class="n">condition</span> <span class="c1">#2 is true, run this block&gt;</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="o">&lt;</span><span class="k">if</span> <span class="n">neither</span> <span class="c1">#1 or #2 are true, do this&gt;</span>
+</pre></div>
+</div>
+<p>Comments:</p>
+<ul class="simple">
+<li><p>You can include zero or as many <code class="docutils literal notranslate"><span class="pre">elif</span></code> code blocks as you want</p></li>
+<li><p>You can omit the <code class="docutils literal notranslate"><span class="pre">else</span></code> block entirely</p></li>
+<li><p>Whatever is in <code class="docutils literal notranslate"><span class="pre">&lt;condition&gt;</span></code> must evaluate to True or False or 1 or 0</p></li>
+<li><p>See the <strong>“Logic and comparisons”</strong> section above on how Python evaluates conditions</p></li>
+</ul>
+</div>
 </div>
 <div class="section" id="python-and-indentation">
 <h1>PYTHON AND INDENTATION<a class="headerlink" href="#python-and-indentation" title="Permalink to this headline">¶</a></h1>
@@ -671,26 +738,6 @@
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="if-elif-else">
-<h2>If, elif, else<a class="headerlink" href="#if-elif-else" title="Permalink to this headline">¶</a></h2>
-<p>Syntax:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="o">&lt;</span><span class="n">condition</span> <span class="c1">#1&gt;:                         # you must use the colon!</span>
-     <span class="o">&lt;</span><span class="n">do</span> <span class="n">some</span> <span class="n">stuff</span> <span class="k">if</span> <span class="n">condition</span> <span class="ow">is</span> <span class="n">true</span><span class="o">&gt;</span>
-<span class="k">elif</span> <span class="o">&lt;</span><span class="n">condition</span> <span class="c1">#2&gt;:                       # as in &quot;Else-If&quot;</span>
-    <span class="o">&lt;</span><span class="k">if</span> <span class="n">condition</span> <span class="c1">#1 is false, and </span>
-    <span class="n">condition</span> <span class="c1">#2 is true, run this block&gt;</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="o">&lt;</span><span class="k">if</span> <span class="n">neither</span> <span class="c1">#1 or #2 are true, do this&gt;</span>
-</pre></div>
-</div>
-<p>Comments:</p>
-<ul class="simple">
-<li><p>You can include zero or as many <code class="docutils literal notranslate"><span class="pre">elif</span></code> code blocks as you want</p></li>
-<li><p>You can omit the <code class="docutils literal notranslate"><span class="pre">else</span></code> block entirely</p></li>
-<li><p>Whatever is in <code class="docutils literal notranslate"><span class="pre">&lt;condition&gt;</span></code> must evaluate to True or False or 1 or 0</p></li>
-<li><p>See the <strong>“Logic and comparisons”</strong> section above on how Python evaluates conditions</p></li>
-</ul>
 </div>
 <div class="section" id="other-notes-in-the-textbook">
 <h2>Other notes in the textbook<a class="headerlink" href="#other-notes-in-the-textbook" title="Permalink to this headline">¶</a></h2>
