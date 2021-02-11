@@ -86,3 +86,20 @@
     - file: "content/02/10_Golden_7"
       title: "Filepaths"
     
+  - file: "content/03/00_Data_Wrangling_Intro"
+    title: "Wrangling with Data"
+    sections:
+    - file: "content/03/01a_NumpyCS"
+      title: "Numpy - Intro"
+    - file: "content/03/01b_NumpyBasics"
+      title: "Numpy - Basics"
+    - file: "content/03/01c_NumpyPractice"
+      title: "Numpy - Exercises"
+    - file: "content/03/01d_NumpyResources"
+      title: "Numpy - More Resources"
+#     - file: "content/03/02a_pandasIntro"
+#       title: "Pandas - Getting Started"
+#     - file: "content/03/01d_NumpyResources"
+#       title: "Numpy - More Resources"      
+      
+      
