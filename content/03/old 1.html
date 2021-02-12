@@ -266,25 +266,73 @@
    3. Wrangling with Data
   </a>
   <ul class="collapse-ul">
-   <li class="toctree-l2">
-    <a class="reference internal" href="01a_NumpyCS.html">
-     3.1. Numpy - Intro
+   <li class="toctree-l2 collapsible-parent">
+    <a class="reference internal" href="01_Numpy.html">
+     3.1. Numpy
     </a>
+    <ul class="collapse-ul">
+     <li class="toctree-l3">
+      <a class="reference internal" href="01a_NumpyCS.html">
+       3.1.1. Numpy + Scientific Computing
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="01b_NumpyBasics.html">
+       3.1.2. A (Very) Short Introduction
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="01c_NumpyPractice.html">
+       3.1.3. Exercises
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="01d_NumpyResources.html">
+       3.1.4. More Resources
+      </a>
+     </li>
+    </ul>
+    <i class="fas fa-chevron-down">
+    </i>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="01b_NumpyBasics.html">
-     3.2. Numpy - Basics
+   <li class="toctree-l2 collapsible-parent">
+    <a class="reference internal" href="02a_pandasIntro.html">
+     3.2. Pandas
     </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="01c_NumpyPractice.html">
-     3.3. Numpy - Exercises
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="01d_NumpyResources.html">
-     3.4. Numpy - More Resources
-    </a>
+    <ul class="collapse-ul">
+     <li class="toctree-l3">
+      <a class="reference internal" href="02a_pandasTips.html">
+       3.2.1. Tips
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="02b_pandasVocab.html">
+       3.2.2. Vocab
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="02c_commonFcns.html">
+       3.2.3. Common Functions
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="02d_temp.html">
+       3.2.4. Temp. vs Perm. Objects
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="02e_eda_golden.html">
+       3.2.5. Golden Rules + EDA
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="02f_chains.html">
+       3.2.6. Readable Chains
+      </a>
+     </li>
+    </ul>
+    <i class="fas fa-chevron-down">
+    </i>
    </li>
   </ul>
   <i class="fas fa-chevron-down">
@@ -407,90 +455,6 @@
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#essential-pandas-manipulating-data">
-     Essential
-     <code class="docutils literal notranslate">
-      <span class="pre">
-       pandas
-      </span>
-     </code>
-     : Manipulating data
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#temp-vs-permanent-methods">
-     Temp vs. Permanent Methods
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#essential-pandas-statistical-operations">
-     Essential
-     <code class="docutils literal notranslate">
-      <span class="pre">
-       pandas
-      </span>
-     </code>
-     : Statistical operations
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#essential-pandas-exploring-the-dataset">
-     Essential
-     <code class="docutils literal notranslate">
-      <span class="pre">
-       pandas
-      </span>
-     </code>
-     : Exploring the dataset
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#game-of-thrones-example-slicing-group-stats-and-plotting">
-     Game of Thrones example - slicing, group stats, and plotting
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#version-1">
-       Version 1
-      </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#version-2-query-loc-for-readability">
-       Version 2 -
-       <code class="docutils literal notranslate">
-        <span class="pre">
-         query
-        </span>
-       </code>
-       &gt;
-       <code class="docutils literal notranslate">
-        <span class="pre">
-         loc
-        </span>
-       </code>
-       , for readability
-      </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#version-3-method-chaining">
-       Version 3 - Method chaining!
-      </a>
-     </li>
-    </ul>
-   </li>
-  </ul>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#cookbook-and-best-practices-a-starter-kit">
-   Cookbook and best practices (a starter kit)
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#general-analysis-steps-and-comments">
-     General analysis steps and comments
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
     <a class="reference internal nav-link" href="#creating-summary-tables">
      Creating summary tables
     </a>
@@ -528,7 +492,9 @@
         
               <div>
                 
-  <div class="section" id="outline">
+  <p>When you wonder about syntax, and arguments, you can either go to the official documentation on the web, or rely on Jupyter’s tab auto completion.</p>
+<p><strong>Here is a fun trick: <code class="docutils literal notranslate"><span class="pre">SHIFT+TAB</span></code>!</strong> Try it! Type <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">pandas</span> <span class="pre">as</span> <span class="pre">pd</span></code> then run that to load pandas. Then type <code class="docutils literal notranslate"><span class="pre">pd.merge(</span></code> like you want to merge to dataframes, except you don’t remember the arguments to use. So type <code class="docutils literal notranslate"><span class="pre">SHIFT+TAB+TAB</span></code>. <em>1 TAB opens a little syntax screen, 2 opens a larger amount of syntax info, and 3 opens the whole help file at the bottom of the screen.</em> I’ve personally moved to <code class="docutils literal notranslate"><span class="pre">SHIFT+TAB</span></code> for help most of the time (instead of <code class="docutils literal notranslate"><span class="pre">help()</span></code> or <code class="docutils literal notranslate"><span class="pre">?</span></code>).</p>
+<div class="section" id="outline">
 <h1>Outline<a class="headerlink" href="#outline" title="Permalink to this headline">¶</a></h1>
 <ol class="simple">
 <li><p>Be patient and persistent: keep going when the scope of <code class="docutils literal notranslate"><span class="pre">pandas</span></code> and your first data analysis exercises stump you!</p></li>
@@ -594,107 +560,6 @@ give your dataframes better names!</p>
 </div>
 </div>
 </div>
-<p>.</p>
-<p>.</p>
-<p>.</p>
-<p>.</p>
-<p>.</p>
-<p>.</p>
-<p>.</p>
-<p>.</p>
-<p>.</p>
-<p>.</p>
-<p>.</p>
-<p>.</p>
-<p>.</p>
-<p>.</p>
-<div class="section" id="essential-pandas-manipulating-data">
-<h2>Essential <code class="docutils literal notranslate"><span class="pre">pandas</span></code>: Manipulating data<a class="headerlink" href="#essential-pandas-manipulating-data" title="Permalink to this headline">¶</a></h2>
-<p>Try to notice, throughout this lecture, when methods operate on specific DataFrames (e.g. <code class="docutils literal notranslate"><span class="pre">assign</span></code>)  and when methods are a called on the pandas module itself (e.g. <code class="docutils literal notranslate"><span class="pre">pd.merge</span></code>). <em>Generally,</em> methods that work outside a single DataFrame (the load data or work on multiple datasets) are called via <code class="docutils literal notranslate"><span class="pre">pd.&lt;method&gt;</span></code> while methods that work on a single DataFrame are called via <code class="docutils literal notranslate"><span class="pre">&lt;dfname&gt;.&lt;method&gt;</span></code>.</p>
-<table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="text-align:left head"><p>Function</p></th>
-<th class="text-align:left head"><p>Pandas method</p></th>
-<th class="text-align:left head"><p>Example</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td class="text-align:left"><p>new variables or replace existing</p></td>
-<td class="text-align:left"><p>assign</p></td>
-<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">df.assign(feet=df['height']//12)</span></code></p></td>
-</tr>
-<tr class="row-odd"><td class="text-align:left"><p>get subset of columns</p></td>
-<td class="text-align:left"><p>filter</p></td>
-<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">df.filter(['height','weight'])</span></code></p></td>
-</tr>
-<tr class="row-even"><td class="text-align:left"><p>rename columns</p></td>
-<td class="text-align:left"><p>rename</p></td>
-<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">df.rename(columns={&quot;height&quot;:</span> <span class="pre">&quot;how</span> <span class="pre">tall&quot;})</span></code></p></td>
-</tr>
-<tr class="row-odd"><td class="text-align:left"><p>get subset of observations  <br> or, “drop rows”</p></td>
-<td class="text-align:left"><p>query /  loc / iloc</p></td>
-<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">df.query('height</span> <span class="pre">&gt;</span> <span class="pre">68')</span></code>    <br> <code class="docutils literal notranslate"><span class="pre">df.loc[df['gender']=='F']</span></code>   <br> <code class="docutils literal notranslate"><span class="pre">df.iloc[1:]</span></code></p></td>
-</tr>
-<tr class="row-even"><td class="text-align:left"><p>sort</p></td>
-<td class="text-align:left"><p>sort_values</p></td>
-<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">df.sort_values(['gender','weight'])</span></code></p></td>
-</tr>
-<tr class="row-odd"><td class="text-align:left"><p>create groups</p></td>
-<td class="text-align:left"><p>groupby</p></td>
-<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">df.groupby(['gender'])</span></code></p></td>
-</tr>
-<tr class="row-even"><td class="text-align:left"><p>summary stats on groups</p></td>
-<td class="text-align:left"><p>agg / pivot_table</p></td>
-<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">df.groupby(['gender'])</span></code> <br> <code class="docutils literal notranslate"><span class="pre">.agg({'height':[max,min,np.mean]})</span></code> <br> <br> <code class="docutils literal notranslate"><span class="pre">df.pivot_table(index='age',</span> <span class="pre">columns='age',</span> <span class="pre">values='weight'</span></code></p></td>
-</tr>
-<tr class="row-odd"><td class="text-align:left"><p>create a variable based on its group</p></td>
-<td class="text-align:left"><p>agg+transform</p></td>
-<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">df.groupby(['industry','year'])['leverage'].mean().transform()</span></code> <br> will add industry average leverage to your dataset for each firm</p></td>
-</tr>
-<tr class="row-even"><td class="text-align:left"><p>delete column</p></td>
-<td class="text-align:left"><p>drop</p></td>
-<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">df.drop(columns=['gender'])</span></code></p></td>
-</tr>
-<tr class="row-odd"><td class="text-align:left"><p>use non-pd function on df</p></td>
-<td class="text-align:left"><p>pipe</p></td>
-<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">df.pipe((sns.lineplot,data),x=x,y=y)</span></code></p></td>
-</tr>
-<tr class="row-even"><td class="text-align:left"><p>combine dataframes</p></td>
-<td class="text-align:left"><p>merge</p></td>
-<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">pd.merge(df1,df2)</span></code></p></td>
-</tr>
-<tr class="row-odd"><td class="text-align:left"><p><strong>RESHAPE:</strong> convert wide to long/tall (“stack!”)</p></td>
-<td class="text-align:left"><p>stack</p></td>
-<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">df.stack()</span></code>, see popout</p></td>
-</tr>
-<tr class="row-even"><td class="text-align:left"><p>… another option to reshape tall:</p></td>
-<td class="text-align:left"><p>melt</p></td>
-<td class="text-align:left"><p></p></td>
-</tr>
-<tr class="row-odd"><td class="text-align:left"><p><strong>RESHAPE:</strong> convert long/tall to wide (“unstack!”)</p></td>
-<td class="text-align:left"><p>unstack</p></td>
-<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">df.unstack()</span></code>, see popout</p></td>
-</tr>
-<tr class="row-even"><td class="text-align:left"><p>… another option to reshape wide:</p></td>
-<td class="text-align:left"><p>pivot / pivot_table</p></td>
-<td class="text-align:left"><p></p></td>
-</tr>
-<tr class="row-odd"><td class="text-align:left"><p>change time frequency of data</p></td>
-<td class="text-align:left"><p>resample</p></td>
-<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">df.resample('Y').mean()</span></code></p></td>
-</tr>
-<tr class="row-even"><td class="text-align:left"><p>loading data</p></td>
-<td class="text-align:left"><p>read_csv, read_dta, etc</p></td>
-<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">pd.read_csv('wine.csv')</span></code></p></td>
-</tr>
-<tr class="row-odd"><td class="text-align:left"><p>window/rolling calculations</p></td>
-<td class="text-align:left"><p>window</p></td>
-<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">df['vol_5yr']=</span> <span class="pre">df.groupby('firm').rolling(36).var('ret').transform()</span></code> will add 36 period volatility for each firm</p></td>
-</tr>
-</tbody>
-</table>
-<p>When you wonder about syntax, and arguments, you can either go to the official documentation on the web, or rely on Jupyter’s tab auto completion.</p>
-<p><strong>Here is a fun trick: <code class="docutils literal notranslate"><span class="pre">SHIFT+TAB</span></code>!</strong> Try it! Type <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">pandas</span> <span class="pre">as</span> <span class="pre">pd</span></code> then run that to load pandas. Then type <code class="docutils literal notranslate"><span class="pre">pd.merge(</span></code> like you want to merge to dataframes, except you don’t remember the arguments to use. So type <code class="docutils literal notranslate"><span class="pre">SHIFT+TAB+TAB</span></code>. <em>1 TAB opens a little syntax screen, 2 opens a larger amount of syntax info, and 3 opens the whole help file at the bottom of the screen.</em> I’ve personally moved to <code class="docutils literal notranslate"><span class="pre">SHIFT+TAB</span></code> for help most of the time (instead of <code class="docutils literal notranslate"><span class="pre">help()</span></code> or <code class="docutils literal notranslate"><span class="pre">?</span></code>).</p>
 <div class="cell tag_popout docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># AN ASIDE ON RESHAPING</span>
@@ -779,499 +644,6 @@ GM      11   13   13   15
 </pre></div>
 </div>
 </div>
-</div>
-<p>.</p>
-<p>.</p>
-<p>.</p>
-<p>.</p>
-<p>.</p>
-<p>.</p>
-<p>.</p>
-<p>.</p>
-<p>.</p>
-<p>.</p>
-<p>.</p>
-<p>.</p>
-<p>.</p>
-<p>.</p>
-<p>.</p>
-<p>.</p>
-<p>.</p>
-<p>.</p>
-<p>.</p>
-<p>.</p>
-<p>.</p>
-<p>.</p>
-<p>.</p>
-<p>.</p>
-<p>.</p>
-<p>.</p>
-<p>.</p>
-</div>
-<div class="section" id="temp-vs-permanent-methods">
-<h2>Temp vs. Permanent Methods<a class="headerlink" href="#temp-vs-permanent-methods" title="Permalink to this headline">¶</a></h2>
-<p>This is generally true with python but I’ll reiterate here:
-Using methods on an object (e.g. a DataFrame) will give you an
-object with the method applied, as you
-can see here:</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># define a df</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;height&#39;</span><span class="p">:[</span><span class="mi">72</span><span class="p">,</span><span class="mi">60</span><span class="p">,</span><span class="mi">68</span><span class="p">],</span><span class="s1">&#39;gender&#39;</span><span class="p">:[</span><span class="s1">&#39;M&#39;</span><span class="p">,</span><span class="s1">&#39;F&#39;</span><span class="p">,</span><span class="s1">&#39;M&#39;</span><span class="p">],</span><span class="s1">&#39;weight&#39;</span><span class="p">:[</span><span class="mi">175</span><span class="p">,</span><span class="mi">110</span><span class="p">,</span><span class="mi">150</span><span class="p">]})</span>
-<span class="c1"># call method on df and print</span>
-<span class="nb">print</span><span class="p">(</span> <span class="n">df</span><span class="o">.</span><span class="n">assign</span><span class="p">(</span><span class="n">feet</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;height&#39;</span><span class="p">]</span><span class="o">//</span><span class="mi">12</span><span class="p">))</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   height gender  weight  feet
-0      72      M     175     6
-1      60      F     110     5
-2      68      M     150     5
-</pre></div>
-</div>
-</div>
-</div>
-<p>Which is useful if you want to
-alter the variable <strong>temporarily</strong>
-(e.g. for a graph, or to just
-print it out, like I literally
-just did!).</p>
-<p><strong>But the object in memory wasn’t
-changed when I used <code class="docutils literal notranslate"><span class="pre">df.&lt;method&gt;</span></code>. See, here is the df in memory:</strong></p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>  <span class="c1"># see, no feet!</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   height gender  weight
-0      72      M     175
-1      60      F     110
-2      68      M     150
-</pre></div>
-</div>
-</div>
-</div>
-<p><strong>If you want to change the object permanently, you have three
-options:</strong></p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># option 1: explicitly define the df as the prior df after the method was called</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">assign</span><span class="p">(</span><span class="n">feet1</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;height&#39;</span><span class="p">]</span><span class="o">//</span><span class="mi">12</span><span class="p">)</span> 
-
-<span class="c1"># option 2: define a new feature of the df</span>
-<span class="n">df</span><span class="p">[</span><span class="s1">&#39;feet2&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;height&#39;</span><span class="p">]</span><span class="o">//</span><span class="mi">12</span>
-
-<span class="c1"># option 3: some methods have an &quot;inplace&quot; option so you don&#39;t need to write &quot;df = ...&quot;</span>
-<span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="s1">&#39;gender&#39;</span><span class="p">,</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span> <span class="c1"># feet1 and feet 2 added to obj in memory, gender dropped</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   height  weight  feet1  feet2
-0      72     175      6      6
-1      60     110      5      5
-2      68     150      5      5
-</pre></div>
-</div>
-</div>
-</div>
-<p>Generally, option 2 &gt; 1 (it is easier to read), but you’ll need to use option 1 when you’re method chaining.</p>
-</div>
-<div class="section" id="essential-pandas-statistical-operations">
-<h2>Essential <code class="docutils literal notranslate"><span class="pre">pandas</span></code>: Statistical operations<a class="headerlink" href="#essential-pandas-statistical-operations" title="Permalink to this headline">¶</a></h2>
-<p>These functions can be called for a variable “col1” in this form: <code class="docutils literal notranslate"><span class="pre">df['col1'].&lt;function&gt;()</span></code> or for all numerical columns at once using <code class="docutils literal notranslate"><span class="pre">df.&lt;function&gt;()</span></code>.</p>
-<p><strong>ALSO:</strong> These functions work within groups.</p>
-<table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="head"><p>Function</p></th>
-<th class="head"><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>count</p></td>
-<td><p>Number of non-null observations</p></td>
-</tr>
-<tr class="row-odd"><td><p>sum</p></td>
-<td><p>Sum of values</p></td>
-</tr>
-<tr class="row-even"><td><p>mean</p></td>
-<td><p>Mean of values</p></td>
-</tr>
-<tr class="row-odd"><td><p>mad</p></td>
-<td><p>Mean absolute deviation</p></td>
-</tr>
-<tr class="row-even"><td><p>median</p></td>
-<td><p>Arithmetic median of values</p></td>
-</tr>
-<tr class="row-odd"><td><p>min</p></td>
-<td><p>Minimum</p></td>
-</tr>
-<tr class="row-even"><td><p>max</p></td>
-<td><p>Maximum</p></td>
-</tr>
-<tr class="row-odd"><td><p>mode</p></td>
-<td><p>Mode</p></td>
-</tr>
-<tr class="row-even"><td><p>abs</p></td>
-<td><p>Absolute Value</p></td>
-</tr>
-<tr class="row-odd"><td><p>prod</p></td>
-<td><p>Product of values</p></td>
-</tr>
-<tr class="row-even"><td><p>std</p></td>
-<td><p>Unbiased standard deviation</p></td>
-</tr>
-<tr class="row-odd"><td><p>var</p></td>
-<td><p>Unbiased variance</p></td>
-</tr>
-<tr class="row-even"><td><p>sem</p></td>
-<td><p>Unbiased standard error of the mean</p></td>
-</tr>
-<tr class="row-odd"><td><p>skew</p></td>
-<td><p>Unbiased skewness (3rd moment)</p></td>
-</tr>
-<tr class="row-even"><td><p>kurt</p></td>
-<td><p>Unbiased kurtosis (4th moment)</p></td>
-</tr>
-<tr class="row-odd"><td><p>quantile</p></td>
-<td><p>Sample quantile (value at %)</p></td>
-</tr>
-<tr class="row-even"><td><p>cumsum</p></td>
-<td><p>Cumulative sum</p></td>
-</tr>
-<tr class="row-odd"><td><p>cumprod</p></td>
-<td><p>Cumulative product</p></td>
-</tr>
-<tr class="row-even"><td><p>cummax</p></td>
-<td><p>Cumulative maximum</p></td>
-</tr>
-<tr class="row-odd"><td><p>cummin</p></td>
-<td><p>Cumulative minimum</p></td>
-</tr>
-<tr class="row-even"><td><p>nunique</p></td>
-<td><p>How many unique values?</p></td>
-</tr>
-<tr class="row-odd"><td><p>value_counts</p></td>
-<td><p>How many of each unique value are there?</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="section" id="essential-pandas-exploring-the-dataset">
-<h2>Essential <code class="docutils literal notranslate"><span class="pre">pandas</span></code>: Exploring the dataset<a class="headerlink" href="#essential-pandas-exploring-the-dataset" title="Permalink to this headline">¶</a></h2>
-<p>You should <strong>always, always, always</strong> open your datasets up to physically (digitally?) look at them and then also generate summary statistics:</p>
-<ol class="simple">
-<li><p>Print the first and last five rows: <code class="docutils literal notranslate"><span class="pre">df.head()</span></code> and <code class="docutils literal notranslate"><span class="pre">df.tail()</span></code></p></li>
-<li><p>What is the shape of the data? <code class="docutils literal notranslate"><span class="pre">df.shape</span></code></p></li>
-<li><p>How much memory does it take, and what are the variable names/types? <code class="docutils literal notranslate"><span class="pre">df.info()</span></code></p></li>
-<li><p>Summary stats on variables: <code class="docutils literal notranslate"><span class="pre">df.describe()</span></code>, <code class="docutils literal notranslate"><span class="pre">df.value_counts[:10]</span></code>, and <code class="docutils literal notranslate"><span class="pre">df['var'].nunique()</span></code></p></li>
-</ol>
-<p>Consider these <strong>Golden Rules</strong>.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># import a famous dataset, seaborn nicely contains it out of the box!</span>
-<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span> 
-<span class="n">iris</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">load_dataset</span><span class="p">(</span><span class="s1">&#39;iris&#39;</span><span class="p">)</span> 
-
-<span class="nb">print</span><span class="p">(</span><span class="n">iris</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">iris</span><span class="o">.</span><span class="n">tail</span><span class="p">())</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n\n</span><span class="s2">The shape is: &quot;</span><span class="p">,</span><span class="n">iris</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n\n</span><span class="s2">Info:&quot;</span><span class="p">,</span><span class="n">iris</span><span class="o">.</span><span class="n">info</span><span class="p">())</span> <span class="c1"># memory usage, name, dtype, and # of non-null obs (--&gt; # of missing obs) per variable</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">iris</span><span class="o">.</span><span class="n">describe</span><span class="p">())</span> <span class="c1"># summary stats, and you can customize the list!</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   sepal_length  sepal_width  petal_length  petal_width species
-0           5.1          3.5           1.4          0.2  setosa
-1           4.9          3.0           1.4          0.2  setosa
-2           4.7          3.2           1.3          0.2  setosa
-3           4.6          3.1           1.5          0.2  setosa
-4           5.0          3.6           1.4          0.2  setosa
-     sepal_length  sepal_width  petal_length  petal_width    species
-145           6.7          3.0           5.2          2.3  virginica
-146           6.3          2.5           5.0          1.9  virginica
-147           6.5          3.0           5.2          2.0  virginica
-148           6.2          3.4           5.4          2.3  virginica
-149           5.9          3.0           5.1          1.8  virginica
-
-
-The shape is:  (150, 5)
-&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
-RangeIndex: 150 entries, 0 to 149
-Data columns (total 5 columns):
-sepal_length    150 non-null float64
-sepal_width     150 non-null float64
-petal_length    150 non-null float64
-petal_width     150 non-null float64
-species         150 non-null object
-dtypes: float64(4), object(1)
-memory usage: 6.0+ KB
-
-
-Info: None
-       sepal_length  sepal_width  petal_length  petal_width
-count    150.000000   150.000000    150.000000   150.000000
-mean       5.843333     3.057333      3.758000     1.199333
-std        0.828066     0.435866      1.765298     0.762238
-min        4.300000     2.000000      1.000000     0.100000
-25%        5.100000     2.800000      1.600000     0.300000
-50%        5.800000     3.000000      4.350000     1.300000
-75%        6.400000     3.300000      5.100000     1.800000
-max        7.900000     4.400000      6.900000     2.500000
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="section" id="game-of-thrones-example-slicing-group-stats-and-plotting">
-<h2>Game of Thrones example - slicing, group stats, and plotting<a class="headerlink" href="#game-of-thrones-example-slicing-group-stats-and-plotting" title="Permalink to this headline">¶</a></h2>
-<p>I didn’t find an off the shelf dataset to run our seminal analysis from last week, but I found <a class="reference external" href="https://www.kaggle.com/dhanushkishore/impact-of-game-of-thrones-on-us-baby-names">an analysis</a> that explored if Game of Thrones prompted parents to start naming their children differently. The following is inspired by that, but uses pandas to acquire and wrangle our data in a “Tidyverse”-style (how R would do it) flow.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#TO USE datadotworld PACKAGE:</span>
-<span class="c1">#1. create account at data.world, then run the next two lines:</span>
-<span class="c1">#2. in terminal/powershell: pip install datadotworld[pandas]</span>
-<span class="c1">#</span>
-<span class="c1">#   IF THIS DOESN&#39;T WORK BC YOU GET AN ERROR ABOUT &quot;CCHARDET&quot;, RUN:</span>
-<span class="c1">#    conda install -c conda-forge cchardet</span>
-<span class="c1">#   THEN RERUN: pip install datadotworld[pandas] </span>
-<span class="c1">#</span>
-<span class="c1">#3. in terminal/powershell: dw configure          </span>
-<span class="c1">#3a. copy in API token from data.world (get from settings &gt; advanced)</span>
-
-<span class="kn">import</span> <span class="nn">datadotworld</span> <span class="k">as</span> <span class="nn">dw</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-
-<span class="n">baby_names</span> <span class="o">=</span> <span class="n">dw</span><span class="o">.</span><span class="n">load_dataset</span><span class="p">(</span><span class="s1">&#39;nkrishnaswami/us-ssa-baby-names-national&#39;</span><span class="p">)</span>
-<span class="n">baby_names</span> <span class="o">=</span> <span class="n">baby_names</span><span class="o">.</span><span class="n">dataframes</span><span class="p">[</span><span class="s1">&#39;names_ranks_counts&#39;</span><span class="p">]</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="section" id="version-1">
-<h3>Version 1<a class="headerlink" href="#version-1" title="Permalink to this headline">¶</a></h3>
-<ol class="simple">
-<li><p>save a slice of the dataset with the names we want (using <code class="docutils literal notranslate"><span class="pre">.loc</span></code>)</p></li>
-<li><p>sometimes a name is used by boys and girls in the same year, so combine the counts so that we have one observation per name per year</p></li>
-<li><p>save the dataset and then call a plot function</p></li>
-</ol>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># restrict by name and only keep years after 2000</span>
-<span class="n">somenames</span> <span class="o">=</span> <span class="n">baby_names</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span> <span class="c1"># formating inside this () is just to make it clearer to a reader</span>
-    <span class="p">(</span> <span class="c1"># condition 1: one of these names, | means &quot;or&quot;</span>
-        <span class="p">(</span><span class="n">baby_names</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Sansa&quot;</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">baby_names</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Daenerys&quot;</span><span class="p">)</span> <span class="o">|</span> 
-        <span class="p">(</span><span class="n">baby_names</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Brienne&quot;</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">baby_names</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Cersei&quot;</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">baby_names</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Tyrion&quot;</span><span class="p">)</span> 
-    <span class="p">)</span> <span class="c1"># end condition 1</span>
-    <span class="o">&amp;</span> <span class="c1"># &amp; means &quot;and&quot;</span>
-    <span class="p">(</span> <span class="c1"># condition 2: these years</span>
-        <span class="n">baby_names</span><span class="p">[</span><span class="s1">&#39;year&#39;</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="mi">2000</span><span class="p">)</span> <span class="c1"># end condition 2</span>
-    <span class="p">)]</span>
-
-<span class="c1"># if a name is used by F and M in a given year, combine the count variable</span>
-<span class="c1"># Q: why is there a &quot;reset_index&quot;? </span>
-<span class="c1"># A: groupby automatically turns the groups (here name and year) into the index</span>
-<span class="c1">#    reset_index makes the index simple integers 0, 1, 2 and also</span>
-<span class="c1">#    turns the the grouping variables back into normal columns</span>
-<span class="c1"># A2: instead of reset_index, you can include `as_index=False` inside groupby!</span>
-<span class="c1">#     (I just learned that myself!)</span>
-<span class="n">somenames_agg</span> <span class="o">=</span> <span class="n">somenames</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;name&#39;</span><span class="p">,</span><span class="s1">&#39;year&#39;</span><span class="p">])[</span><span class="s1">&#39;count&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span><span class="o">.</span><span class="n">sort_values</span><span class="p">([</span><span class="s1">&#39;name&#39;</span><span class="p">,</span><span class="s1">&#39;year&#39;</span><span class="p">])</span>
-
-<span class="c1"># plot</span>
-<span class="n">sns</span><span class="o">.</span><span class="n">lineplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">somenames_agg</span><span class="p">,</span> <span class="n">hue</span><span class="o">=</span><span class="s1">&#39;name&#39;</span><span class="p">,</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;year&#39;</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="s1">&#39;count&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="mi">2011</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span><span class="mi">160</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">)</span> <span class="c1"># add a line for when the show debuted</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.lines.Line2D at 0x2dd2103ad48&gt;
-</pre></div>
-</div>
-<img alt="../../_images/old 1_18_1.png" src="../../_images/old 1_18_1.png" />
-</div>
-</div>
-</div>
-<div class="section" id="version-2-query-loc-for-readability">
-<h3>Version 2 - <code class="docutils literal notranslate"><span class="pre">query</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">loc</span></code>, for readability<a class="headerlink" href="#version-2-query-loc-for-readability" title="Permalink to this headline">¶</a></h3>
-<p>Same as V1, but step 1 uses <code class="docutils literal notranslate"><span class="pre">.query</span></code> to slice inside of <code class="docutils literal notranslate"><span class="pre">.loc</span></code></p>
-<ol class="simple">
-<li><p>save a slice of the dataset with the names we want (using <code class="docutils literal notranslate"><span class="pre">.query</span></code>)</p></li>
-<li><p>sometimes a name is used by boys and girls in the same year, so combine the counts so that we have one observation per name per year</p></li>
-<li><p>save the dataset and then call a plot function</p></li>
-</ol>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># use query instead to slice, and the rest is the same</span>
-<span class="n">somenames</span> <span class="o">=</span> <span class="n">baby_names</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s1">&#39;name in [&quot;Sansa&quot;,&quot;Daenerys&quot;,&quot;Brienne&quot;,&quot;Cersei&quot;,&quot;Tyrion&quot;] &amp; </span><span class="se">\</span>
-<span class="s1">         year &gt;= 2000&#39;</span><span class="p">)</span> <span class="c1"># this is one string with &#39; as the string start/end symbol. Inside, I can use </span>
-                        <span class="c1"># normal quote marks for strings. Also, I can break it into multiple lines with \</span>
-<span class="n">somenames_agg</span> <span class="o">=</span> <span class="n">somenames</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;name&#39;</span><span class="p">,</span><span class="s1">&#39;year&#39;</span><span class="p">])[</span><span class="s1">&#39;count&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span><span class="o">.</span><span class="n">sort_values</span><span class="p">([</span><span class="s1">&#39;name&#39;</span><span class="p">,</span><span class="s1">&#39;year&#39;</span><span class="p">])</span>
-<span class="n">sns</span><span class="o">.</span><span class="n">lineplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">somenames_agg</span><span class="p">,</span> <span class="n">hue</span><span class="o">=</span><span class="s1">&#39;name&#39;</span><span class="p">,</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;year&#39;</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="s1">&#39;count&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="mi">2011</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span><span class="mi">160</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">)</span> <span class="c1"># add a line for when the show debuted</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.lines.Line2D at 0x2dd1e387bc8&gt;
-</pre></div>
-</div>
-<img alt="../../_images/old 1_20_1.png" src="../../_images/old 1_20_1.png" />
-</div>
-</div>
-</div>
-<div class="section" id="version-3-method-chaining">
-<h3>Version 3 - Method chaining!<a class="headerlink" href="#version-3-method-chaining" title="Permalink to this headline">¶</a></h3>
-<p>Method chaining: Call the object (<code class="docutils literal notranslate"><span class="pre">baby_names</span></code>) and then keep calling one method on it after another.</p>
-<ul class="simple">
-<li><p>Python will call the methods from left to right.</p></li>
-<li><p>There is no need to store the intermediate dataset (like <code class="docutils literal notranslate"><span class="pre">somenames</span></code> and <code class="docutils literal notranslate"><span class="pre">somenames_agg</span></code> above!)</p>
-<ul>
-<li><p>–&gt; Easier to read and write without “temp” objects all over the place</p></li>
-<li><p>You can always save the dataset at an intermediate step if you need to</p></li>
-</ul>
-</li>
-</ul>
-<p>So, the first two steps are the same, just the methods will be chained. And then, a bonus trick to plot
-without saving.</p>
-<ol class="simple">
-<li><p>Slice with <code class="docutils literal notranslate"><span class="pre">.query</span></code> to GoT-related names</p></li>
-<li><p>Combine M and F gender counts if a name is used by both in the same year</p></li>
-<li><p>Plot without saving: “Pipe” in the plotting function</p></li>
-</ol>
-<p>The code below produces a plot identical to V1 and V2, <strong>but it is unreadable. Don’t try - I’m about to make this readable!</strong> Just <em>one more</em> iteration…</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">baby_names</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s1">&#39;name in [&quot;Sansa&quot;,&quot;Daenerys&quot;,&quot;Brienne&quot;,&quot;Cersei&quot;,&quot;Tyrion&quot;] &amp; year &gt;= 2000&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;name&#39;</span><span class="p">,</span><span class="s1">&#39;year&#39;</span><span class="p">])[</span><span class="s1">&#39;count&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span><span class="o">.</span><span class="n">pipe</span><span class="p">((</span><span class="n">sns</span><span class="o">.</span><span class="n">lineplot</span><span class="p">,</span> <span class="s1">&#39;data&#39;</span><span class="p">),</span><span class="n">hue</span><span class="o">=</span><span class="s1">&#39;name&#39;</span><span class="p">,</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;year&#39;</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="s1">&#39;count&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="mi">2011</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span><span class="mi">160</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">)</span> <span class="c1"># add a line for when the show debuted</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.lines.Line2D at 0x2dd1f726308&gt;
-</pre></div>
-</div>
-<img alt="../../_images/old 1_22_1.png" src="../../_images/old 1_22_1.png" />
-</div>
-</div>
-<p>To make this readable, we write a parentheses over multiple lines</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">(</span>
-    <span class="ow">and</span> <span class="n">python</span> <span class="n">knows</span> <span class="n">to</span> <span class="n">execute</span> <span class="n">the</span> <span class="n">code</span> <span class="n">inside</span> <span class="k">as</span> <span class="n">one</span> <span class="n">line</span>
-<span class="p">)</span>
-</pre></div>
-</div>
-<p>And as a result, we can write a long series of methods that is comprehensible, and if we want we can even comment on each line:</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">baby_names</span>
-      <span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s1">&#39;name in [&quot;Sansa&quot;,&quot;Daenerys&quot;,&quot;Brienne&quot;,&quot;Cersei&quot;,&quot;Tyrion&quot;] &amp; </span><span class="se">\</span>
-<span class="s1">         year &gt;= 2000&#39;</span><span class="p">)</span>
-      <span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;name&#39;</span><span class="p">,</span><span class="s1">&#39;year&#39;</span><span class="p">])[</span><span class="s1">&#39;count&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="c1"># for each name-year, combine M and F counts</span>
-      <span class="o">.</span><span class="n">reset_index</span><span class="p">()</span> <span class="c1"># give us the column names back as they were (makes the plot call easy)</span>
-      <span class="o">.</span><span class="n">pipe</span><span class="p">((</span><span class="n">sns</span><span class="o">.</span><span class="n">lineplot</span><span class="p">,</span> <span class="s1">&#39;data&#39;</span><span class="p">),</span><span class="n">hue</span><span class="o">=</span><span class="s1">&#39;name&#39;</span><span class="p">,</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;year&#39;</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="s1">&#39;count&#39;</span><span class="p">)</span>
-<span class="p">)</span>    
-<span class="n">plt</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="mi">2011</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span><span class="mi">160</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">)</span> <span class="c1"># add a line for when the show debuted</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;WOW THAT WAS EASY TO WRITE AND SHARE&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Text(0.5, 1.0, &#39;WOW THAT WAS EASY TO WRITE AND SHARE&#39;)
-</pre></div>
-</div>
-<img alt="../../_images/old 1_24_1.png" src="../../_images/old 1_24_1.png" />
-</div>
-</div>
-<p><strong>WOW. That’s nice code!</strong></p>
-<p>Also: <strong>Naming your baby Daenerys after the hero…</strong></p>
-<p>…is a bad break.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">baby_names</span>
-      <span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s1">&#39;name in [&quot;Khaleesi&quot;,&quot;Ramsay&quot;,&quot;Lyanna&quot;,&quot;Ellaria&quot;,&quot;Meera&quot;] &amp; </span><span class="se">\</span>
-<span class="s1">         year &gt;= 2000&#39;</span><span class="p">)</span>
-      <span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;name&#39;</span><span class="p">,</span><span class="s1">&#39;year&#39;</span><span class="p">])[</span><span class="s1">&#39;count&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="c1"># for each name-year, combine M and F counts</span>
-      <span class="o">.</span><span class="n">reset_index</span><span class="p">()</span> <span class="c1"># give use the column names back as they were (makes the plot call easy)</span>
-      <span class="o">.</span><span class="n">pipe</span><span class="p">((</span><span class="n">sns</span><span class="o">.</span><span class="n">lineplot</span><span class="p">,</span> <span class="s1">&#39;data&#39;</span><span class="p">),</span><span class="n">hue</span><span class="o">=</span><span class="s1">&#39;name&#39;</span><span class="p">,</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;year&#39;</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="s1">&#39;count&#39;</span><span class="p">)</span>
-<span class="p">)</span>    
-<span class="n">plt</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="mi">2011</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span><span class="mi">160</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">)</span> <span class="c1"># add a line for when the show debuted</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;PEOPLE NAMED THEIR KID KHALEESI&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Text(0.5, 1.0, &#39;PEOPLE NAMED THEIR KID KHALEESI&#39;)
-</pre></div>
-</div>
-<img alt="../../_images/old 1_26_1.png" src="../../_images/old 1_26_1.png" />
-</div>
-</div>
-<p><strong>BUT IT COULD BE WORSE</strong></p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">baby_names</span>
-      <span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s1">&#39;name in [&quot;Krymson&quot;] &amp; year &gt;= 1950&#39;</span><span class="p">)</span>
-      <span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;name&#39;</span><span class="p">,</span><span class="s1">&#39;year&#39;</span><span class="p">])[</span><span class="s1">&#39;count&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="c1"># for each name-year, combine M and F counts</span>
-      <span class="o">.</span><span class="n">reset_index</span><span class="p">()</span> <span class="c1"># give use the column names back as they were (makes the plot call easy)</span>
-      <span class="o">.</span><span class="n">pipe</span><span class="p">((</span><span class="n">sns</span><span class="o">.</span><span class="n">lineplot</span><span class="p">,</span> <span class="s1">&#39;data&#39;</span><span class="p">),</span><span class="n">hue</span><span class="o">=</span><span class="s1">&#39;name&#39;</span><span class="p">,</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;year&#39;</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="s1">&#39;count&#39;</span><span class="p">)</span>
-<span class="p">)</span>    
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Alabama, wow...Krymson, really?&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Text(0.5, 1.0, &#39;Alabama, wow...Krymson, really?&#39;)
-</pre></div>
-</div>
-<img alt="../../_images/old 1_28_1.png" src="../../_images/old 1_28_1.png" />
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="section" id="cookbook-and-best-practices-a-starter-kit">
-<h1>Cookbook and best practices (a starter kit)<a class="headerlink" href="#cookbook-and-best-practices-a-starter-kit" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="general-analysis-steps-and-comments">
-<h2>General analysis steps and comments<a class="headerlink" href="#general-analysis-steps-and-comments" title="Permalink to this headline">¶</a></h2>
-<ol class="simple">
-<li><p><a class="reference external" href="#Essential-pandas:-Exploring-the-dataset">Start with the basic data exploration steps above</a></p>
-<ul class="simple">
-<li><p>variable names, types, count/missing, distributions</p></li>
-</ul>
-</li>
-<li><p>Data cleaning:</p>
-<ul class="simple">
-<li><p>Do some variables have large outliers? You might need to winsorize or drop those observations.</p></li>
-<li><p>Do some variables have many missing variables? Maybe there was a problem with the source or how you loaded it.</p></li>
-<li><p>Do some variables have impossible values? For example, sales can’t be negative! Yet, some datasets use “-99” to indicate missing data. Or are there bad dates (June 31st)?</p></li>
-<li><p>Are there duplicate observations (e.g. two 2001-GM observations because they changed their fiscal year in the middle of calendar year 2001?)</p></li>
-<li><p>Are there missing observations or a gap in the time series (e.g. no observation in 2005 for Enron because the executive team was too “distracted to file its 10-K)</p></li>
-<li><p>Do variables contradict each other? (E.g. If my birthday is 1/5/1999, then I must be 21 as of this writing.)</p></li>
-</ul>
-</li>
-<li><p>Institutional knowledge is crucial.</p>
-<ul class="simple">
-<li><p>For example, in my research on firm investment policies and financing decisions (e.g. leverage), I drop any firms from the finance or utility industries. I know to do this because those industries are subject to several factors that fundamentally change their leverage in ways unrelated to their investment policies. Thus, including them would contaminate any relationships I find.</p></li>
-<li><p>When we work with 10-K text data, we need to know what data tables are available and how to remove boilerplate.</p></li>
-<li><p>You only get institutional through reading supporting materials, documentation, related info (research papers and WSJ, etc), and… the documents themselves. For example, I’ve read in excess of 6,000 proxy statements for a single research project. (If that sounds exciting: Go to grad school and become a prof!)</p></li>
-</ul>
-</li>
-<li><p>Explore the data with your question in mind</p>
-<ul class="simple">
-<li><p>Compute statistics by subgroups (by age, or industry), or two-way (by gender and age)</p></li>
-<li><p>This step reinforces institutional knowledge and understanding of the data</p></li>
-<li><p><strong>Data exploration</strong> and <strong>data cleaning</strong> are interrelated and you’ll go back and forth from one to the other.</p></li>
-</ul>
-</li>
-</ol>
 </div>
 <div class="section" id="creating-summary-tables">
 <h2>Creating summary tables<a class="headerlink" href="#creating-summary-tables" title="Permalink to this headline">¶</a></h2>

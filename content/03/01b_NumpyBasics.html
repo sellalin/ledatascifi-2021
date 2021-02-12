@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>3.2. A Quick Guide to Numpy &#8212; LeDataSciFi-2021</title>
+    <title>3.1.2. A Quick Guide to Numpy &#8212; LeDataSciFi-2021</title>
     
   <link rel="stylesheet" href="../../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
@@ -57,8 +57,8 @@
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="3.3. Exercises" href="01c_NumpyPractice.html" />
-    <link rel="prev" title="3.1. Numpy, Python, and Scientific Computing" href="01a_NumpyCS.html" />
+    <link rel="next" title="3.1.3. Exercises" href="01c_NumpyPractice.html" />
+    <link rel="prev" title="3.1.1. Numpy, Python, and Scientific Computing" href="01a_NumpyCS.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -268,25 +268,73 @@
    3. Wrangling with Data
   </a>
   <ul class="current collapse-ul">
-   <li class="toctree-l2">
-    <a class="reference internal" href="01a_NumpyCS.html">
-     3.1. Numpy - Intro
+   <li class="toctree-l2 current active collapsible-parent">
+    <a class="reference internal" href="01_Numpy.html">
+     3.1. Numpy
     </a>
+    <ul class="current collapse-ul">
+     <li class="toctree-l3">
+      <a class="reference internal" href="01a_NumpyCS.html">
+       3.1.1. Numpy + Scientific Computing
+      </a>
+     </li>
+     <li class="toctree-l3 current active">
+      <a class="current reference internal" href="#">
+       3.1.2. A (Very) Short Introduction
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="01c_NumpyPractice.html">
+       3.1.3. Exercises
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="01d_NumpyResources.html">
+       3.1.4. More Resources
+      </a>
+     </li>
+    </ul>
+    <i class="fas fa-chevron-down">
+    </i>
    </li>
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
-     3.2. Numpy - Basics
+   <li class="toctree-l2 collapsible-parent">
+    <a class="reference internal" href="02a_pandasIntro.html">
+     3.2. Pandas
     </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="01c_NumpyPractice.html">
-     3.3. Numpy - Exercises
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="01d_NumpyResources.html">
-     3.4. Numpy - More Resources
-    </a>
+    <ul class="collapse-ul">
+     <li class="toctree-l3">
+      <a class="reference internal" href="02a_pandasTips.html">
+       3.2.1. Tips
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="02b_pandasVocab.html">
+       3.2.2. Vocab
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="02c_commonFcns.html">
+       3.2.3. Common Functions
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="02d_temp.html">
+       3.2.4. Temp. vs Perm. Objects
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="02e_eda_golden.html">
+       3.2.5. Golden Rules + EDA
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="02f_chains.html">
+       3.2.6. Readable Chains
+      </a>
+     </li>
+    </ul>
+    <i class="fas fa-chevron-down">
+    </i>
    </li>
   </ul>
   <i class="fas fa-chevron-down">
@@ -400,22 +448,22 @@
             <ul class="nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#common-methods">
-   3.2.1. Common methods:
+   3.1.2.1. Common methods:
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#a-warning-about-random-numbers">
-   3.2.2. A warning about “random” numbers
+   3.1.2.2. A warning about “random” numbers
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#using-numpy-within-pandas">
-   3.2.3. Using Numpy within Pandas
+   3.1.2.3. Using Numpy within Pandas
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#the-dark-side-of-vectors-and-numpy">
-   3.2.4. The dark side of vectors and
+   3.1.2.4. The dark side of vectors and
    <code class="docutils literal notranslate">
     <span class="pre">
      numpy
@@ -435,7 +483,7 @@
               <div>
                 
   <div class="section" id="a-quick-guide-to-numpy">
-<h1><span class="section-number">3.2. </span>A Quick Guide to Numpy<a class="headerlink" href="#a-quick-guide-to-numpy" title="Permalink to this headline">¶</a></h1>
+<h1><span class="section-number">3.1.2. </span>A Quick Guide to Numpy<a class="headerlink" href="#a-quick-guide-to-numpy" title="Permalink to this headline">¶</a></h1>
 <p>At the top of your python code, load Numpy like this:</p>
 <div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 </pre></div>
@@ -456,7 +504,7 @@
 </ol>
 </div>
 <div class="section" id="common-methods">
-<h2><span class="section-number">3.2.1. </span>Common methods:<a class="headerlink" href="#common-methods" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">3.1.2.1. </span>Common methods:<a class="headerlink" href="#common-methods" title="Permalink to this headline">¶</a></h2>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>Copy this table into your cookbook notes folder.</p>
@@ -508,7 +556,7 @@
 </table>
 </div>
 <div class="section" id="a-warning-about-random-numbers">
-<h2><span class="section-number">3.2.2. </span>A warning about “random” numbers<a class="headerlink" href="#a-warning-about-random-numbers" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">3.1.2.2. </span>A warning about “random” numbers<a class="headerlink" href="#a-warning-about-random-numbers" title="Permalink to this headline">¶</a></h2>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Let me repeat that: <strong>YOU MUST NEVER EVER EVER EVER EVER DRAW RANDOM NUMBERS WITHOUT SETTING A SEED!!!</strong></p>
@@ -540,12 +588,12 @@ now it&#39;s the same again:  [0.55 0.72 0.6  0.54]
 </div>
 </div>
 <div class="section" id="using-numpy-within-pandas">
-<h2><span class="section-number">3.2.3. </span>Using Numpy within Pandas<a class="headerlink" href="#using-numpy-within-pandas" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">3.1.2.3. </span>Using Numpy within Pandas<a class="headerlink" href="#using-numpy-within-pandas" title="Permalink to this headline">¶</a></h2>
 <p>Because pandas is built on top of numpy, all of these numpy functions work on pandas objects.</p>
 <p>Numpy  🤝 Pandas</p>
 </div>
 <div class="section" id="the-dark-side-of-vectors-and-numpy">
-<h2><span class="section-number">3.2.4. </span>The dark side of vectors and <code class="docutils literal notranslate"><span class="pre">numpy</span></code><a class="headerlink" href="#the-dark-side-of-vectors-and-numpy" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">3.1.2.4. </span>The dark side of vectors and <code class="docutils literal notranslate"><span class="pre">numpy</span></code><a class="headerlink" href="#the-dark-side-of-vectors-and-numpy" title="Permalink to this headline">¶</a></h2>
 <ol class="simple">
 <li><p>You can’t vectorize every operation :(</p></li>
 <li><p>Numpy is a great solution for the issue of speed, but not for the issue of memory.</p></li>
@@ -582,8 +630,8 @@ now it&#39;s the same again:  [0.55 0.72 0.6  0.54]
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="01a_NumpyCS.html" title="previous page"><span class="section-number">3.1. </span>Numpy, Python, and Scientific Computing</a>
-    <a class='right-next' id="next-link" href="01c_NumpyPractice.html" title="next page"><span class="section-number">3.3. </span>Exercises</a>
+    <a class='left-prev' id="prev-link" href="01a_NumpyCS.html" title="previous page"><span class="section-number">3.1.1. </span>Numpy, Python, and Scientific Computing</a>
+    <a class='right-next' id="next-link" href="01c_NumpyPractice.html" title="next page"><span class="section-number">3.1.3. </span>Exercises</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
